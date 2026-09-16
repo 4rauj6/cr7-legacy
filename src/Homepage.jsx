@@ -9,7 +9,7 @@ function Homepage() {
           alt="CR7 homepage img"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 z-10 flex flex-row justify-between items-center text-white text-7xl px-40">
+        <div className="absolute inset-0 z-10 flex flex-row justify-between items-center text-white text-7xl px-70">
           <span className="cursor-default hover:text-red-600 transition-colors">
             Cristiano
           </span>
@@ -28,7 +28,7 @@ function Homepage() {
         <div className="flex flex-row">
           <div className="flex flex-col">
             <img
-              src="src/assets/sporting-clube-de-portugal-logo-escudo-4270991534.png"
+              src="src/assets/Sporting_Clube_de_Portugal_2026.svg.webp"
               alt="Sporting Portugal logo"
             />
             <div className="hidden">
@@ -39,7 +39,7 @@ function Homepage() {
 
           <div className="flex flex-col">
             <img
-              src="src/assets/sporting-clube-de-portugal-logo-escudo-4270991534.png"
+              src="src/assets/Manchester_United_FC_crest.svg"
               alt="Manchester United logo"
             />
             <div className="hidden">
@@ -52,7 +52,7 @@ function Homepage() {
 
           <div className="flex flex-col">
             <img
-              src="src/assets/sporting-clube-de-portugal-logo-escudo-4270991534.png"
+              src="src/assets/Real_Madrid_CF.svg"
               alt="Real Madrid logo"
             />
             <div className="hidden">
@@ -63,7 +63,7 @@ function Homepage() {
 
           <div className="flex flex-col">
             <img
-              src="src/assets/sporting-clube-de-portugal-logo-escudo-4270991534.png"
+              src="src/assets/Juventus_FC_-_logo_black_(Italy,_2020).svg"
               alt="Juventus logo"
             />
             <div className="hidden">
@@ -74,7 +74,7 @@ function Homepage() {
 
           <div className="flex flex-col">
             <img
-              src="src/assets/sporting-clube-de-portugal-logo-escudo-4270991534.png"
+              src="src/assets/Nassr_FC_Logo.svg.webp"
               alt="Al-Nassr logo"
             />
             <div className="hidden">
