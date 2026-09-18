@@ -9,134 +9,140 @@ const teamLogo = [
 ];
 
 function TeamsDisplay() {
-  const [activeHover, setActiveHover] = useState(null);
-  const [activeMessage, setActiveMessage] = useState("");
+  const [isOnLogo, setIsOnLogo] = useState(null);
   return (
-    <div className="flex flex-col">
-      <h1>Teams that made part of Cristiano&apos;s career</h1>
-      <div className="flex flex-row">
+    <div className="flex flex-row justify-center items-center">
+      <div
+        className={`relative flex justify-center items-center p-5 ${isOnLogo === 0 ? "z-50" : "z-0"}`}
+      >
+        <img
+          src={teamLogo[0]}
+          alt=""
+          className="w-32 z-20 transition-transform duration-300 ease-in-out hover:scale-150"
+          onMouseEnter={() => setIsOnLogo(0)}
+          onMouseLeave={() => setIsOnLogo(null)}
+        />
         <div
-          className="flex flex-col"
-          onMouseEnter={() => {
-            setActiveHover(0);
-            setActiveMessage(`Sporting Portugal\n1997-2003`);
-          }}
-          onMouseLeave={() => {
-            setActiveHover(null);
-            setActiveMessage("");
-          }}
+          className={`absolute -left-1 top-33 -translate-y-1/2 h-78 w-0 p-4 bg-green-600 rounded text-white 
+            pointer-events-none transition-all duration-250 ease-out 
+            ${isOnLogo === 0 ? "opacity-100 translate-x-0 w-170 z-10" : "opacity-0 translate-0 z-0"}`}
         >
-          <img
-            src={teamLogo[0]}
-            alt="Sporting Portugal logo"
-            className={
-              activeHover === 0 ? "scale-130 bg-green-700" : "scale-100"
-            }
-          />
-          <div className="hidden">
-            <span>Sporting Portugal (1997-2003)</span>
-            <span>The young talent starts his journey</span>
-          </div>
-        </div>
-
-        <div
-          className="flex flex-col"
-          onMouseEnter={() => {
-            setActiveHover(1);
-            setActiveMessage(`Manchester United FC\n2003-2009 | 2021-2022`);
-          }}
-          onMouseLeave={() => {
-            setActiveHover(null);
-            setActiveMessage("");
-          }}
-        >
-          <img
-            src={teamLogo[1]}
-            alt="Manchester United logo"
-            className={activeHover === 1 ? "scale-130 bg-red-700" : "scale-100"}
-          />
-          <div className="hidden">
-            <span>Manchester United FC (2003-2009 | 2021-2022)</span>
-            <span>The team who show the world what Cristiano could do it</span>
-          </div>
-        </div>
-
-        <div
-          className="flex flex-col"
-          onMouseEnter={() => {
-            setActiveHover(2);
-            setActiveMessage(`Real Madrid FC\n2009-2018`);
-          }}
-          onMouseLeave={() => {
-            setActiveHover(null);
-            setActiveMessage("");
-          }}
-        >
-          <img
-            src={teamLogo[2]}
-            alt="Real Madrid logo"
-            className={
-              activeHover === 2 ? "scale-130 bg-yellow-400" : "scale-100"
-            }
-          />
-          <div className="hidden">
-            <span>Real Madrid FC (2009-2018)</span>
-            <span>The GOAT arrives in Spain</span>
-          </div>
-        </div>
-
-        <div
-          className="flex flex-col"
-          onMouseEnter={() => {
-            setActiveHover(3);
-            setActiveMessage(`Juventus FC\n2018-2021`);
-          }}
-          onMouseLeave={() => {
-            setActiveHover(null);
-            setActiveMessage("");
-          }}
-        >
-          <img
-            src={teamLogo[3]}
-            alt="Juventus logo"
-            className={
-              activeHover === 3 ? "scale-130 bg-gray-300" : "scale-100"
-            }
-          />
-          <div className="hidden">
-            <span>Juventus FC (2018-2021)</span>
-            <span>Eating pasta and conquering Italy</span>
-          </div>
-        </div>
-
-        <div
-          className="flex flex-col"
-          onMouseEnter={() => {
-            setActiveHover(4);
-            setActiveMessage(`Al-Nassr\n2021-currently`);
-          }}
-          onMouseLeave={() => {
-            setActiveHover(null);
-            setActiveMessage("");
-          }}
-        >
-          <img
-            src={teamLogo[4]}
-            alt="Al-Nassr logo"
-            className={
-              activeHover === 4 ? "scale-130 bg-yellow-300" : "scale-100"
-            }
-          />
-          <div className="hidden">
-            <span>Al-Nassr (2021-Current)</span>
-            <span>A new challenger, the same GOAT</span>
+          <div className="flex flex-col ml-55 mt-3 gap-y-3">
+            <span className="text-5xl">Sporting Portugal</span>
+            <span className="text-xl text-gray-200">2003-2009</span>
+            <ul className="p-0">
+              <li>1x Portuguese Super Cup Winner</li>
+            </ul>
           </div>
         </div>
       </div>
 
-      {activeMessage && (
-        <span className="whitespace-pre-line">{activeMessage}</span>
-      )}
+      <div
+        className={`relative flex justify-center items-center p-5 ${isOnLogo === 1 ? "z-50" : "z-0"}`}
+      >
+        <img
+          src={teamLogo[1]}
+          alt=""
+          className="w-40 z-20 transition-transform duration-300 ease-in-out hover:scale-150"
+          onMouseEnter={() => setIsOnLogo(1)}
+          onMouseLeave={() => setIsOnLogo(null)}
+        />
+        <div
+          className={`absolute -left-1 top-32 -translate-y-1/2 h-78 w-0 p-4 bg-red-700 rounded text-white 
+            pointer-events-none transition-all duration-250 ease-out 
+            ${isOnLogo === 1 ? "opacity-100 translate-x-0 w-200 z-10" : "opacity-0 translate-0 z-0"}`}
+        >
+          <div className="flex flex-col ml-60 mt-3 gap-y-3">
+            <span className="text-5xl">Manchester United FC</span>
+            <span className="text-xl text-gray-200">2009-2010 | 2021-2022</span>
+            <div className="flex">
+              <ul className="p-0">
+                <li>3x English Champion</li>
+                <li>1x UCL Champion</li>
+                <li>1x FIFA Club World Cup Champion</li>
+                <li>2x English League Cup Champion</li>
+                <li>1x English Super Cup Champion</li>
+              </ul>
+              <ul className="p-0">
+                <li>1x English FA Cup Champion</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className={`relative flex justify-center items-center p-5 ${isOnLogo === 2 ? "z-50" : "z-0"}`}
+      >
+        <img
+          src={teamLogo[2]}
+          alt=""
+          className="w-30 z-20 transition-transform duration-300 ease-in-out hover:scale-150"
+          onMouseEnter={() => setIsOnLogo(2)}
+          onMouseLeave={() => setIsOnLogo(null)}
+        />
+        <div
+          className={`absolute -left-1 top-33 -translate-y-1/2 h-78 w-0 p-4 bg-blue-700 rounded text-white 
+            pointer-events-none transition-all duration-250 ease-out 
+            ${isOnLogo === 2 ? "opacity-100 translate-x-0 w-160 z-10" : "opacity-0 translate-0 z-0"}`}
+        >
+          <div className="flex flex-col ml-50 mt-3 gap-y-3">
+            <span className="text-5xl">Real Madrid CF</span>
+            <span className="text-xl text-gray-200">2010-2018</span>
+            <ul className="p-0">
+              <li>1x Portuguese Super Cup Winner</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        className={`relative flex justify-center items-center p-5 ${isOnLogo === 3 ? "z-50" : "z-0"}`}
+      >
+        <img
+          src={teamLogo[3]}
+          alt=""
+          className="w-20 z-20 transition-transform duration-300 ease-in-out hover:scale-150"
+          onMouseEnter={() => setIsOnLogo(3)}
+          onMouseLeave={() => setIsOnLogo(null)}
+        />
+        <div
+          className={`absolute -right-1 top-28 -translate-y-1/2 h-76 w-0 p-4 bg-gray-500 rounded text-white 
+            pointer-events-none z-0 transition-all duration-250 ease-out 
+            ${isOnLogo === 3 ? "opacity-100 translate-x-0 w-160 z-10" : "opacity-0 translate-x-20 z-0"}`}
+        >
+          <div className="flex flex-col ml-0 mt-3 gap-y-3">
+            <span className="text-5xl">Juventus FC</span>
+            <span className="text-xl text-gray-200">2018-2019</span>
+            <ul className="p-0">
+              <li>1x Portuguese Super Cup Winner</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        className={`relative flex justify-center items-center p-5 ${isOnLogo === 4 ? "z-50" : "z-0"}`}
+      >
+        <img
+          src={teamLogo[4]}
+          alt=""
+          className="w-32 z-20 transition-transform duration-300 ease-in-out hover:scale-150"
+          onMouseEnter={() => setIsOnLogo(4)}
+          onMouseLeave={() => setIsOnLogo(null)}
+        />
+        <div
+          className={`absolute -right-1 top-30 -translate-y-1/2 h-80 w-0 p-4 bg-blue-900 rounded text-white 
+            pointer-events-none z-0 transition-all duration-250 ease-out 
+            ${isOnLogo === 4 ? "opacity-100 translate-x-0 w-160 z-10" : "opacity-0 translate-0 z-0"}`}
+        >
+          <div className="flex flex-col mt-3 gap-y-3">
+            <span className="text-5xl">Al-Nassr</span>
+            <span className="text-xl text-gray-200">2022-currently</span>
+            <ul className="p-0">
+              <li>1x Portuguese Super Cup Winner</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

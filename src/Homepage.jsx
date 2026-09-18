@@ -31,11 +31,12 @@ function Homepage() {
         </button>
       </div>
 
-      <div ref={divRef}>
+      <div ref={divRef} className="mt-30">
+        <h2></h2>
         <TeamsDisplay />
       </div>
 
-      <div>
+      <div className="mt-30">
         <CarouselHome />
       </div>
 
