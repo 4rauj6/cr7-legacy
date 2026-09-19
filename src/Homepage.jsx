@@ -39,7 +39,7 @@ function Homepage() {
         <TeamsDisplay />
       </div>
 
-      <div className="mt-30 text-red-600">
+      <div className=" text-red-600">
         <h2 className="p-15">The GOAT through the history</h2>
         <CarouselHome />
       </div>
@@ -52,7 +52,7 @@ function Homepage() {
         <div
           className={`flex flex-col text-left transition-opacity duration-500 ease-in-out ${onCr7Card === true ? "opacity-100" : "opacity-0"}`}
         >
-          <span>5x Ballon D&apos;or winner</span>
+          <span className="w-90">5x The Ballon D&apos;or winner</span>
           <hr className="text-white" />
           <span>22x top goal scorer</span>
           <hr className="text-white" />
