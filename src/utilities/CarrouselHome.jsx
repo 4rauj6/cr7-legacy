@@ -5,7 +5,6 @@ function CarouselHome() {
   return (
     <div className="flex justify-center items-center">
       <div style={{ display: "block", width: 1300, padding: 30 }}>
-        <h2>The GOAT through the history</h2>
         <Carousel fade>
           <Carousel.Item>
             <img

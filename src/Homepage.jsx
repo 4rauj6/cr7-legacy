@@ -1,14 +1,17 @@
 import { ArrowDownIcon } from "@heroicons/react/16/solid";
 import CarouselHome from "./utilities/CarrouselHome";
 import TeamsDisplay from "./utilities/TeamsDisplay";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import The1000Goals from "./utilities/The1000GoalChart";
 
 function Homepage() {
   const divRef = useRef(null);
   const goToRef = () => divRef.current.scrollIntoView();
 
+  const [onCr7Card, setOnCr7Card] = useState(false);
+
   return (
-    <div className="hero">
+    <div className="hero bg-gray-900">
       <div className="relative">
         <img
           src="src/assets/cristiano_ronaldo_5k_2.jpg"
@@ -36,22 +39,91 @@ function Homepage() {
         <TeamsDisplay />
       </div>
 
-      <div className="mt-30">
+      <div className="mt-30 text-red-600">
+        <h2 className="p-15">The GOAT through the history</h2>
         <CarouselHome />
       </div>
 
-      <h2 className="p-15">Statistics</h2>
-      <div className="flex flex-row justify-center items-center">
+      <div className="text-red-500">
+        <h2 className="p-15">Individual awards</h2>
+      </div>
+
+      <div className="flex flex-row justify-center items-center gap-4 text-red-600 text-3xl uppercase font-semibold">
+        <div
+          className={`flex flex-col text-left transition-opacity duration-500 ease-in-out ${onCr7Card === true ? "opacity-100" : "opacity-0"}`}
+        >
+          <span>5x Ballon D&apos;or winner</span>
+          <hr className="text-white" />
+          <span>22x top goal scorer</span>
+          <hr className="text-white" />
+          <span className="w-90">
+            3x The Best FIFA Men&apos;s Player winner
+          </span>
+        </div>
+
         <img
           src="src/assets/IMG_3895_480x480-2299050960.png"
-          alt="CR7 profile"
+          alt="Individual Awards"
+          className="object-contain w-110 bg-gray-800 rounded-tl-[30px] rounded-tr-[30px] border-3 border-red-600 cursor-pointer "
+          onMouseEnter={() => setOnCr7Card(true)}
+          onMouseLeave={() => setOnCr7Card(false)}
         />
-        <div className="flex flex-col self-start">
-          <div className="flex flex-row gap-20">
-            <span className="text-3xl">Total goals:</span>
-            <span className="text-3xl">979</span>
-          </div>
+
+        <div
+          className={`flex flex-col text-left transition-opacity duration-500 ease-in-out ${onCr7Card === true ? "opacity-100" : "opacity-0"}`}
+        >
+          <span>8x player of the year</span>
+          <hr className="text-white" />
+          <span>4x UEFA best player</span>
+          <hr className="text-white" />
+          <span className="w-80">12x Footballer of the year</span>
         </div>
+      </div>
+
+      <div className="text-red-600 p-15">
+        <h2>By the Portugal&apos;s nation</h2>
+      </div>
+
+      <div className="flex flex-row justify-center items-center gap-30">
+        <img
+          src="src/assets/Portugal_national_football_team_logo_crest-2592173146.png"
+          alt=""
+          className="w-110 h-full object-contain"
+        />
+        <div className="flex flex-col self-start gap-2">
+          <span className="text-gray-300">
+            Achivements <br />
+            <span className="text-red-600 text-[35px]">
+              2x UEFA Nations League champion
+            </span>
+          </span>{" "}
+          <hr className="text-white" />
+          <span className="text-gray-300">
+            Apperances <br />
+            <span className="text-red-600 text-4xl">233</span>
+          </span>{" "}
+          <hr className="text-white" />
+          <span className="text-gray-300">
+            Goals <br /> <span className="text-red-600 text-4xl">146</span>
+          </span>{" "}
+          <hr className="text-white" />
+          <span className="text-gray-300">
+            Assists <br /> <span className="text-red-600 text-4xl">45</span>
+          </span>{" "}
+          <hr className="text-white" />
+          <span className="text-gray-300">
+            Minutes played <br />
+            <span className="text-red-600 text-4xl">18.537&apos;</span>
+          </span>{" "}
+        </div>
+      </div>
+
+      <div className="p-15 text-red-600">
+        <h2>Road to to 1000 goals</h2>
+      </div>
+
+      <div>
+        <The1000Goals />
       </div>
     </div>
   );
