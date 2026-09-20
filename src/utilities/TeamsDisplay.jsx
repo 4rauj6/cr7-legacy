@@ -121,7 +121,7 @@ function TeamsDisplay() {
           >
             <div className="flex flex-col ml-0 mt-3 gap-y-3">
               <span className="text-5xl">Juventus FC</span>
-              <span className="text-xl text-gray-200">2018-2019</span>
+              <span className="text-xl text-gray-200">2018-2021</span>
               <ul className="p-0">
                 <li>1x Portuguese Super Cup Winner</li>
               </ul>
