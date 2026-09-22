@@ -28,9 +28,9 @@ function Homepage() {
         </div>
         <button
           onClick={goToRef}
-          className="absolute right-90 -translate-x-1/2 bottom-80 z-20"
+          className="absolute right-90 -translate-x-1/2 bottom-80 z-20 "
         >
-          <ArrowDownIcon className="size-10 text-white hover:text-red-600 cursor-pointer transition-colors" />
+          <ArrowDownIcon className="size-10 text-white cursor-pointer hover:text-red-600" />
         </button>
       </div>
 

@@ -11,6 +11,7 @@ function CareerDetails() {
       size: "w-[420px]",
       place: " ml-[90px]",
       text: "The first appearance of Cristiano playing in the national team of Portugal was in 19/08/2003. Along all those years he become a legend and one of the greatest player of his nation. With Portugal, Cristano played 226 ",
+      cr7InTeam: "src/assets/blt479a8a6db1c2b895.webp"
     },
 
     {
@@ -29,7 +30,7 @@ function CareerDetails() {
       header: "Manchester United FC",
       years: "2003-2010 | 2021-2022",
       size: "w-[500px] ml-[40px] mt-[30px]",
-      text: "In 2003, Cristiano Ronaldo arrived in england, now, to play in the Man. United squad. Cristiano's skills increased so well during his time in Old Trafford that even still being a young player, he became the most clinical finisher and dribbler of the world. The achiviements don't arrived so late. from 2007 to 2009, the red devils won three times in a row the PL. The 2008 season was a exceptional season, with CR7 winning the UCL and the Ballon D'or. Until this day, Cristiano Ronaldo still one of the greatest pplayer of Manchester United's team. In 2021, he made his return to Old Trafford and break another record becaming the all-time goalscorer of the season.",
+      text: "In 2003, Cristiano Ronaldo arrived in england, now, to play in the Man. United squad. Cristiano's skills increased so well during his time in Old Trafford that even still being a young player, he became the most clinical finisher and dribbler of the world. from 2007 to 2009, the red devils won three times in a row the PL. In 2008 season CR7 won the UCL and the Ballon D'or. Cristiano Ronaldo still one of the greatest player of Manchester United's team. In 2021, he made his return to Old Trafford and break another record becaming the all-time goalscorer of the season.",
     },
 
     {
@@ -71,7 +72,7 @@ function CareerDetails() {
   } = useNavegateBtns(selectedTeam);
 
   return (
-    <div className="hero-2 bg-gray-900 min-h-screen ">
+    <div className="hero-2 bg-gray-900 min-h-screen">
       <Link to="/">
         <img
           src="src/assets/cristiano-ronaldo-cr7-seeklogo.png"
@@ -109,19 +110,23 @@ function CareerDetails() {
           </svg>
         </button>
       </div>
-      <div className="flex flex-row p-4 mt-10">
+      <div className="flex flex-row justify-center items-center p-4 mt-10">
         <img
           key={currentIndex}
           src={team.logo}
           alt={team.name}
           className={`${team.size} ${team.place} fade-in ml-5 `}
         />
-        <div className="text-red-600 mt-20 ml-20">
+        <div className="flex flex-col self-start text-red-600 mt-20 ml-20">
           <p className="text-4xl">{team.header}</p>
           <span className="text-gray-400">{team.years}</span>
           <hr className="text-white" />
           <p className="text-xl text-white w-150">{team.text}</p>
         </div>
+      </div>
+
+      <div className="flex flex-col">
+        <img key={currentIndex} src={team.cr7InTeam} />
       </div>
     </div>
   );
