@@ -27,6 +27,41 @@ function CarouselHome() {
               className="d-block w-100 rounded"
             />
           </Carousel.Item>
+          <Carousel.Item>
+            <img
+              src="src/assets/cristiano-ronaldo-portugal-nations-league-trophy-2019_dfy3l64lmayi14hflflfxzn3s-2330312099.jpg"
+              alt=""
+              className="d-block w-100 rounded"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              src="src/assets/76ec24140ccb82de0283278f25ef937d8bf871fd-124696252.jpg"
+              alt=""
+              className="d-block w-100 rounded"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              src="src/assets/wp5912131-4008377679.jpg"
+              alt=""
+              className="d-block w-100 rounded"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              src="src/assets/9203549-1844360295.jpg"
+              alt=""
+              className="d-block w-100 rounded"
+            />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              src="src/assets/469675-574112064.jpg"
+              alt=""
+              className="d-block w-100 rounded"
+            />
+          </Carousel.Item>
         </Carousel>
       </div>
     </div>

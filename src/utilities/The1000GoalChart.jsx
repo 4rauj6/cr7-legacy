@@ -2,7 +2,7 @@ import { Cell, Pie, PieChart, Tooltip } from "recharts";
 
 function The1000Goals() {
   const goalsTarget = 1000;
-  const goalsScored = 980;
+  const goalsScored = 981;
   const data = [
     { name: "Goals scored", value: goalsScored },
     {
@@ -58,12 +58,12 @@ function The1000Goals() {
         )}
       </div>
       <div className="absolute left-125 top-20 w-100 flex flex-col gap-2 text-red-600 text-3xl font-dm-sans">
-        <span className="font-dm-sans text-gray-400">
-          Last goal: <span></span>
+        <span className="text-gray-400">
+          First goal: <span></span>
         </span>
         <hr className="text-white w-80" />
-        <span className="font-dm-sans text-gray-400">
-          First goal: <span></span>
+        <span className="text-gray-400">
+          Last goal: <span>09/10/2026</span>
         </span>
       </div>
     </div>

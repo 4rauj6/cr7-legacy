@@ -27,10 +27,16 @@ function Homepage() {
       <div className="relative">
         <img
           src="src/assets/cristiano_ronaldo_5k_2.jpg"
-          alt="CR7 homepage img"
-          className="w-full h-full object-cover"
+          alt=""
+          className=" w-full h-200 md:w-full md:h-full object-cover"
         />
-        <div className="absolute inset-0 z-10 flex flex-row justify-between items-center text-white text-7xl px-50">
+        <div
+          className="absolute inset-0 left-40 bottom-70 z-10 flex flex-col justify-center items-center text-white text-3xl md:text-6xl 
+            md:justify-between
+            md:flex-row
+            md:px-50
+            md:inset-0"
+        >
           <span
             className={`${fadeInHome ? "fade-home" : ""} cursor-default hover:text-red-600 transition-colors font-syncopate`}
           >
@@ -44,7 +50,12 @@ function Homepage() {
         </div>
         <button
           onClick={goToRef}
-          className={`${fadeInHome ? "fade-home" : ""} absolute right-90 -translate-x-1/2 bottom-80 z-20`}
+          className={`${fadeInHome ? "fade-home" : ""} absolute bottom-20 left-45 
+            md:left-270 
+            md:-translate-x-1/2 
+            md:bottom-55
+            z-20
+          `}
         >
           <ArrowDownIcon className="size-10 text-white cursor-pointer hover:text-red-600" />
         </button>
@@ -63,18 +74,46 @@ function Homepage() {
       <div className="text-red-500">
         <h2 className="p-15 font-syncopate">Full profile</h2>
       </div>
-
-      <div className="relative flex flex-row justify-center items-center gap-4 text-red-600 text-4xl font-dm-sans">
+      <div className="relative flex flex-row justify-center items-center gap-10 font-dm-sans">
         <div
-          className={`flex flex-col text-center mb-60 transition-opacity duration-500 ease-in-out cursor-default`}
+          className={`flex flex-col text-center text-4xl mb-70 transition-opacity duration-500 ease-in-out cursor-default`}
         >
-          <span className="w-70">
-            Full name: Cristiano Ronaldo da Silva Medeiros
+          <span className="font-syncopate text-6xl w-96 text-center text-red-600">
+            Cristiano Ronaldo
           </span>
           <hr className="text-white" />
-          <span>Pos: CF/ST</span>
-          <hr className="text-white" />
-          <span></span>
+          <div className="w-90 grid grid-cols-3 gap-4 justify-center items-center mt-10">
+            <a href="https://www.fpf.pt/pt/selecoes/futebol-masculino/selecao-a">
+              <img
+                src="src/assets/Portugal_national_football_team_logo_crest-2592173146.png"
+                alt="portugal"
+              />
+            </a>
+            <a href="https://www.sporting.pt/">
+              <img
+                src="src/assets/sporting-clube-de-portugal-logo-escudo-4270991534.png"
+                alt="sporting"
+              />
+            </a>
+            <a href="https://www.manutd.com/en">
+              <img
+                src="src/assets/Manchester_United_FC_crest.svg"
+                alt="Manchester United"
+              />
+            </a>
+            <a href="https://www.realmadrid.com/en-US">
+              <img src="src/assets/Real_Madrid_CF.svg" alt="Real Madrid" />
+            </a>
+            <a href="https://www.juventus.com/en/">
+              <img
+                src="src/assets/juventus--white.ddcefc5a-2839346283.png"
+                alt="Juventus"
+              />
+            </a>
+            <a href="https://alnassr.sa/">
+              <img src="src/assets/Nassr_FC_Logo.svg.webp" alt="Al-Nassr" />
+            </a>
+          </div>
         </div>
 
         <Link to="/full-info">
@@ -84,14 +123,48 @@ function Homepage() {
             className="object-contain w-80"
           />
         </Link>
+        <hr className="text-white" />
         <div
-          className={`flex flex-col text-center mb-60 transition-opacity duration-500 ease-in-out cursor-default`}
+          className={`flex flex-col text-center text-4xl text-red-600 max-h-85 mb-100 overflow-y-auto transition-opacity duration-500 ease-in-out cursor-default`}
         >
-          <span>8x player of the year</span>
+          <span className="w-96">5x The Ballon Dor&apos;s winner</span>
+          <hr className="text-white" />
+          <span className="w-90">5x UEFA Champions league winner</span>
+          <hr className="text-white" />
+          <span className="w-90">2x UEFA Super Cup Winner</span>
+          <hr className="text-white" />
+          <span className="w-90">2x UEFA Nations League winner</span>
           <hr className="text-white" />
           <span>4x UEFA best player</span>
           <hr className="text-white" />
-          <span className="w-100">12x Footballer of the year</span>
+          <span>2x spanish champion</span>
+          <hr className="text-white" />
+          <span>3x english champion</span>
+          <hr className="text-white" />
+          <span>2x italian champion</span>
+          <hr className="text-white" />
+          <span className="w-90">1x english FA Cup winner</span>
+          <hr className="text-white" />
+          <span className="w-90">2x english league cup winner</span>
+          <hr className="text-white" />
+          <span>1x italian Cup Winner</span>
+          <hr className="text-white" />
+          <span className="w-90">2x italian super cup Winner</span>
+          <hr className="text-white" />
+          <span className="w-90">2x spanish super cup winner</span>
+          <hr className="text-white" />
+          <span className="w-90">1x english super cup winner</span>
+          <hr className="text-white" />
+          <span className="w-90">1x saudi arabian champion</span>
+          <hr className="text-white" />
+          <span className="w-90">1x portuguese super cup winner</span>
+          <hr className="text-white" />
+          <span>8x player of the year</span>
+          <hr className="text-white" />
+          <span className="w-90">12x Footballer of the year</span>
+          <hr className="text-white" />
+          <span>22x top goal scorer</span>
+          <hr className="text-white" />
         </div>
       </div>
 

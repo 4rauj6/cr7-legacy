@@ -5,7 +5,7 @@ function CareerDetails() {
     {
       logo: "src/assets/Portugal_national_football_team_logo_crest-2592173146.png",
       name: "portugal",
-      header: "Portugal's national team",
+      header: "Portugal",
       years: "2003-Currently",
       size: "w-[420px]",
       place: " ml-[90px]",
@@ -15,7 +15,7 @@ function CareerDetails() {
     {
       logo: "src/assets/sporting-clube-de-portugal-logo-escudo-4270991534.png",
       name: "sporting",
-      header: "Sporting Club Portugal",
+      header: "Sporting Portugal",
       years: "2001-2003",
       size: "w-[390px]",
       place: "mb-[100px] ml-[90px]",
@@ -111,10 +111,10 @@ function CareerDetails() {
           className={`${team.size} ${team.place} fade-in ml-5 `}
         />
         <div className="flex flex-col self-start text-red-600 mt-20 ml-20 fade-in">
-          <p className="text-4xl">{team.header}</p>
-          <span className="text-gray-400">{team.years}</span>
+          <p className="text-4xl font-syncopate">{team.header}</p>
+          <span className="text-gray-400 font-dm-sans">{team.years}</span>
           <hr className="text-white" />
-          <p className="text-xl text-white w-150">{team.text}</p>
+          <p className="text-xl text-white w-150 font-dm-sans">{team.text}</p>
         </div>
       </div>
     </div>
