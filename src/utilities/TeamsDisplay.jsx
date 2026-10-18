@@ -30,10 +30,14 @@ function TeamsDisplay() {
             ${isOnLogo === 0 ? "opacity-100 translate-x-0 w-180 z-10" : "opacity-0 translate-0 z-0 w-0"}`}
           >
             <div className="flex flex-col ml-55 mt-3">
-              <span className="text-5xl text-red-600">Sporting Portugal</span>
-              <span className="text-xl text-gray-300 mt-2">2003-2009</span>
+              <span className="text-3xl text-red-600 font-syncopate">
+                Sporting Portugal
+              </span>
+              <span className="text-xl text-gray-300 mt-2 font-dm-sans">
+                2003-2009
+              </span>
               <hr className="text-white" />
-              <ul className="p-0">
+              <ul className="p-0 font-dm-sans">
                 <li>1x Portuguese Super Cup Winner</li>
               </ul>
             </div>
@@ -52,18 +56,18 @@ function TeamsDisplay() {
           />
           <div
             className={`absolute -left-1 top-32 -translate-y-1/2 h-78 w-0 p-4 bg-gray-700 rounded text-white 
-            pointer-events-none transition-all duration-360 ease-out 
+            pointer-events-none transition-all duration-350 ease-out 
             ${isOnLogo === 1 ? "opacity-100 translate-x-0 w-210 z-10" : "opacity-0 translate-0 z-0 w-0"}`}
           >
-            <div className="flex flex-col ml-60">
-              <span className="text-5xl text-red-600">
+            <div className="flex flex-col ml-60 mt-3">
+              <span className="text-3xl text-red-600 font-syncopate">
                 Manchester United FC
               </span>
-              <span className="text-xl text-gray-300 mt-2">
+              <span className="text-xl text-gray-300 mt-2 font-dm-sans">
                 2009-2010 | 2021-2022
               </span>
               <hr className="text-white" />
-              <div className="flex gap-2">
+              <div className="flex gap-3 font-dm-sans">
                 <ul className="p-0">
                   <li>3x English Champion</li>
                   <li>1x UCL Champion</li>
@@ -94,9 +98,13 @@ function TeamsDisplay() {
             pointer-events-none transition-all duration-350 ease-out 
             ${isOnLogo === 2 ? "opacity-100 translate-x-0 w-170 z-10" : "opacity-0 translate-0 z-0 w-0"}`}
           >
-            <div className="flex flex-col ml-50">
-              <span className="text-5xl text-red-600">Real Madrid CF</span>
-              <span className="text-xl text-gray-300 mt-2">2010-2018</span>
+            <div className="flex flex-col ml-50 mt-3">
+              <span className="text-3xl text-red-600 font-syncopate">
+                Real Madrid CF
+              </span>
+              <span className="text-xl text-gray-300 mt-2 font-dm-sans">
+                2010-2018
+              </span>
               <hr className="text-white" />
               <ul className="p-0">
                 <li>1x Portuguese Super Cup Winner</li>
@@ -119,10 +127,15 @@ function TeamsDisplay() {
             pointer-events-none z-0 transition-all duration-350 ease-out 
             ${isOnLogo === 3 ? "opacity-100 translate-x-0 w-160 z-10" : "opacity-0 translate-x-20 z-0 w-0"}`}
           >
-            <div className="flex flex-col ml-0 mt-3 gap-y-3">
-              <span className="text-5xl">Juventus FC</span>
-              <span className="text-xl text-gray-200">2018-2021</span>
-              <ul className="p-0">
+            <div className="flex flex-col ml-0 mt-3">
+              <span className="text-3xl text-red-600 font-syncopate">
+                Juventus FC
+              </span>
+              <span className="text-xl text-gray-200 mt-2 font-dm-sans">
+                2018-2021
+              </span>
+              <hr className="text-white w-99" />
+              <ul className="p-0 font-dm-sans">
                 <li>1x Portuguese Super Cup Winner</li>
               </ul>
             </div>
@@ -143,10 +156,13 @@ function TeamsDisplay() {
             pointer-events-none z-0 transition-all duration-350 ease-out 
             ${isOnLogo === 4 ? "opacity-100 translate-x-0 w-160 z-10" : "opacity-0 translate-0 z-0 w-0"}`}
           >
-            <div className="flex flex-col mt-3 gap-y-3">
-              <span className="text-5xl">Al-Nassr</span>
-              <span className="text-xl text-gray-200">2022-currently</span>
-              <ul className="p-0">
+            <div className="flex flex-col mt-3">
+              <span className="text-3xl font-syncopate">Al-Nassr</span>
+              <span className="text-xl text-gray-200 mt-2 font-dm-sans">
+                2022-currently
+              </span>
+              <hr className="text-white w-90" />
+              <ul className="p-0 font-dm-sans">
                 <li>1x Portuguese Super Cup Winner</li>
               </ul>
             </div>

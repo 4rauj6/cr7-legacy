@@ -2,13 +2,16 @@ import { Cell, Pie, PieChart, Tooltip } from "recharts";
 
 function The1000Goals() {
   const goalsTarget = 1000;
-  const goalsScored = 965;
+  const goalsScored = 980;
   const data = [
     { name: "Goals scored", value: goalsScored },
-    { name: "Goals remaining", value: Math.max(0, goalsTarget - goalsScored) },
+    {
+      name: "Goals remaining",
+      value: Math.floor(goalsTarget - goalsScored),
+    },
   ];
   const remaingGoalsCalc =
-    data.find((entry) => entry.name === "Goals remaining")?.value ?? 0;
+    data.find((datas) => datas.name === "Goals remaining")?.value ?? 0;
 
   const colors = ["#dc2626", "#374151"];
 
@@ -24,8 +27,8 @@ function The1000Goals() {
           startAngle={90}
           endAngle={-270}
         >
-          {data.map((entry, index) => (
-            <Cell key={entry.name} fill={colors[index]} />
+          {data.map((datas, index) => (
+            <Cell key={datas.name} fill={colors[index]} />
           ))}
         </Pie>
 
@@ -34,24 +37,34 @@ function The1000Goals() {
       <div className="flex flex-col absolute right-10 left-0 top-48 items-center justify-center pointer-events-none">
         {goalsScored < goalsTarget && (
           <>
-            <span className="text-3xl text-red-600 ">
+            <span className="text-3xl text-red-600 font-dm-sans">
               {remaingGoalsCalc} remaining
             </span>
-            <span className="text-lg text-gray-300">to the 1,000 goals</span>
+            <span className="text-lg text-gray-300 font-dm-sans">
+              to the 1,000 goals
+            </span>
           </>
         )}
 
         {goalsScored >= goalsTarget && (
           <>
-            <span className="text-red-600 text-3xl text-center">
+            <span className="text-red-600 text-3xl text-center font-dm-sans">
               1,000 goals reached!
             </span>
-            <span className="text-gray-300">Congratulations Cristiano!</span>
+            <span className="text-gray-300 font-dm-sans">
+              Congratulations Cristiano!
+            </span>
           </>
         )}
       </div>
-      <div className="absolute left-125 top-20 w-100 text-red-600 text-3xl">
-        <span>Last goal: 21/08/26</span>
+      <div className="absolute left-125 top-20 w-100 flex flex-col gap-2 text-red-600 text-3xl font-dm-sans">
+        <span className="font-dm-sans text-gray-400">
+          Last goal: <span></span>
+        </span>
+        <hr className="text-white w-80" />
+        <span className="font-dm-sans text-gray-400">
+          First goal: <span></span>
+        </span>
       </div>
     </div>
   );

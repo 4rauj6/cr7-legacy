@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import useNavegateBtns from "../utilities/navegateBtns";
 
 function CareerDetails() {
@@ -11,7 +10,6 @@ function CareerDetails() {
       size: "w-[420px]",
       place: " ml-[90px]",
       text: "The first appearance of Cristiano playing in the national team of Portugal was in 19/08/2003. Along all those years he become a legend and one of the greatest player of his nation. With Portugal, Cristano played 226 ",
-      cr7InTeam: "src/assets/blt479a8a6db1c2b895.webp"
     },
 
     {
@@ -19,7 +17,7 @@ function CareerDetails() {
       name: "sporting",
       header: "Sporting Club Portugal",
       years: "2001-2003",
-      size: "w-[430px]",
+      size: "w-[390px]",
       place: "mb-[100px] ml-[90px]",
       text: "The first profissional football team of CR7's career. Sporting Club Portugal bringed the young portuguese talent to the world. With the Sporting, CR7 played 31 games and scored 5 goals. In those 2 years in the Sporting's team, he won 1 major tournament: The Portuguese Super Cup. After this, thousand of teams around the world wanted to sign the wonder kid.",
     },
@@ -38,7 +36,7 @@ function CareerDetails() {
       name: "rm",
       header: "Real Madrid FC",
       years: "2010-2018",
-      size: "w-[430px]",
+      size: "w-[420px]",
       place: "mb-[100px] ml-[90px]",
       text: "While CR7 became the most lethal and the best player in the world, Real Madrid was in a bad situation. But all this will change with the all new Galatic project. In 2010, Cristiano Ronaldo signed with the Real Madrid's team. The deal was a astronomical success, CR7 and Real Madrid won 16 titles in 8 years. Cristiano became the Real Madrid's top goalscore of all time, scoring 415 goals in 438 appearances. While playing in Spain, he won another 4 times the Ballon D'or award. Even today, football fans still considering thoses seasons the peak of his career",
     },
@@ -72,14 +70,7 @@ function CareerDetails() {
   } = useNavegateBtns(selectedTeam);
 
   return (
-    <div className="hero-2 bg-gray-900 min-h-screen">
-      <Link to="/">
-        <img
-          src="src/assets/cristiano-ronaldo-cr7-seeklogo.png"
-          alt="site logo"
-          className="w-8"
-        />
-      </Link>
+    <div className="hero-2 min-h-screen">
       <div className="flex flex-row gap-3 justify-end mr-25 ">
         <button onClick={prev} className="text-gray-400 hover:text-red-600">
           <svg
@@ -110,23 +101,21 @@ function CareerDetails() {
           </svg>
         </button>
       </div>
-      <div className="flex flex-row justify-center items-center p-4 mt-10">
+      <div
+        key={currentIndex}
+        className="flex flex-row justify-center items-center p-4 fade-in mt-10"
+      >
         <img
-          key={currentIndex}
           src={team.logo}
           alt={team.name}
           className={`${team.size} ${team.place} fade-in ml-5 `}
         />
-        <div className="flex flex-col self-start text-red-600 mt-20 ml-20">
+        <div className="flex flex-col self-start text-red-600 mt-20 ml-20 fade-in">
           <p className="text-4xl">{team.header}</p>
           <span className="text-gray-400">{team.years}</span>
           <hr className="text-white" />
           <p className="text-xl text-white w-150">{team.text}</p>
         </div>
-      </div>
-
-      <div className="flex flex-col">
-        <img key={currentIndex} src={team.cr7InTeam} />
       </div>
     </div>
   );
