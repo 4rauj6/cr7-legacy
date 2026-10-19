@@ -117,7 +117,7 @@ function CareerDetails() {
           <span className="self-center md:self-start text-gray-400 font-dm-sans">
             {team.years}
           </span>
-          <hr className="text-white self-center w-80 md:self-start md:w-full" />
+          <hr className="text-white self-center w-80 md:self-start md:w-100" />
           <p className="p-3 text-center text-md text-white font-dm-sans md:p-0 md:text-left md:text-xl md:w-150">
             {team.text}
           </p>

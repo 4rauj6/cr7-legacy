@@ -60,14 +60,14 @@ function Homepage() {
         </button>
       </div>
 
-      <div ref={divRef} className="mt-30 text-red-500">
+      <div ref={divRef} className="mt-40 mb-0 md:mt-40 md:mb-0 text-red-500">
         <h2 className="flex justify-center items-center md:justify-start md:p-15 font-syncopate">
           Teams preview
         </h2>
         <CareerDetails />
       </div>
 
-      <div className=" text-red-600 md:mt-40">
+      <div className=" text-red-600 mt-0 md:mt-40">
         <span className="flex justify-center items-center text-center text-[22px] md:w-full md:ml-0 md:text-4xl md:justify-start md:items-start md:p-15 font-syncopate">
           The GOAT through the history
         </span>
