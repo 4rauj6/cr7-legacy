@@ -1,6 +1,5 @@
 import { ArrowDownIcon } from "@heroicons/react/16/solid";
 import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
 import CarouselHome from "../utilities/CarrouselHome";
 import The1000Goals from "../utilities/The1000GoalChart";
 import CareerDetails from "./CareerDetails";
@@ -38,12 +37,12 @@ function Homepage() {
             md:inset-0"
         >
           <span
-            className={`${fadeInHome ? "fade-home" : ""} cursor-default hover:text-red-600 transition-colors font-syncopate`}
+            className={`${fadeInHome ? "fade-home" : ""} cursor-default hover:text-red-500 transition-colors font-syncopate`}
           >
             Cristiano
           </span>
           <span
-            className={`${fadeInHome ? "fade-home" : ""} cursor-default hover:text-red-600 transition-colors font-syncopate`}
+            className={`${fadeInHome ? "fade-home" : ""} cursor-default hover:text-red-500 transition-colors font-syncopate`}
           >
             Ronaldo
           </span>
@@ -57,42 +56,50 @@ function Homepage() {
             z-20
           `}
         >
-          <ArrowDownIcon className="size-10 text-white cursor-pointer hover:text-red-600" />
+          <ArrowDownIcon className="size-10 text-white cursor-pointer hover:text-red-500" />
         </button>
       </div>
 
-      <div ref={divRef} className="mt-30 text-red-600">
-        <h2 className="p-15 font-syncopate">Teams preview</h2>
+      <div ref={divRef} className="mt-30 text-red-500">
+        <h2 className="flex justify-center items-center md:justify-start md:p-15 font-syncopate">
+          Teams preview
+        </h2>
         <CareerDetails />
       </div>
 
-      <div className=" text-red-600 mt-40">
-        <h2 className="p-15 font-syncopate">The GOAT through the history</h2>
+      <div className=" text-red-600 md:mt-40">
+        <span className="flex justify-center items-center text-center text-[22px] md:w-full md:ml-0 md:text-4xl md:justify-start md:items-start md:p-15 font-syncopate">
+          The GOAT through the history
+        </span>
         <CarouselHome />
       </div>
 
-      <div className="text-red-500">
-        <h2 className="p-15 font-syncopate">Full profile</h2>
+      <div className="text-red-500 mt-25">
+        <span className="flex justify-center items-center text-3xl md:justify-start md:p-15 md:text-5xl font-syncopate">
+          Full profile
+        </span>
       </div>
-      <div className="relative flex flex-row justify-center items-center gap-10 font-dm-sans">
+      <div className="relative flex flex-col md:flex-row justify-center items-center gap-2 md:gap-10 font-dm-sans">
         <div
-          className={`flex flex-col text-center text-4xl mb-70 transition-opacity duration-500 ease-in-out cursor-default`}
+          className={`flex flex-col text-center text-4xl md:mb-100 cursor-default`}
         >
-          <span className="font-syncopate text-6xl w-96 text-center text-red-600">
+          <span className="font-syncopate text-xl mt-10 md:text-6xl md:w-96 md:text-center md:mb-0 text-red-500">
             Cristiano Ronaldo
           </span>
           <hr className="text-white" />
-          <div className="w-90 grid grid-cols-3 gap-4 justify-center items-center mt-10">
+          <div className=" flex flex-row w-80 gap-3 md:w-90 md:grid md:grid-cols-3 md:gap-4 justify-center items-center">
             <a href="https://www.fpf.pt/pt/selecoes/futebol-masculino/selecao-a">
               <img
                 src="src/assets/Portugal_national_football_team_logo_crest-2592173146.png"
                 alt="portugal"
+                className="w-60 md:w-full"
               />
             </a>
             <a href="https://www.sporting.pt/">
               <img
                 src="src/assets/sporting-clube-de-portugal-logo-escudo-4270991534.png"
                 alt="sporting"
+                className="w-60 md:w-full"
               />
             </a>
             <a href="https://www.manutd.com/en">
@@ -108,6 +115,7 @@ function Homepage() {
               <img
                 src="src/assets/juventus--white.ddcefc5a-2839346283.png"
                 alt="Juventus"
+                className="w-60 md:w-full"
               />
             </a>
             <a href="https://alnassr.sa/">
@@ -115,17 +123,14 @@ function Homepage() {
             </a>
           </div>
         </div>
-
-        <Link to="/full-info">
-          <img
-            src="src/assets/Cr7-PNG-HD-2540334386.png"
-            alt="Individual Awards"
-            className="object-contain w-80"
-          />
-        </Link>
+        <img
+          src="src/assets/Cr7-PNG-HD-2540334386.png"
+          alt="Individual Awards"
+          className="object-contain w-60 md:w-80"
+        />
         <hr className="text-white" />
         <div
-          className={`flex flex-col text-center text-4xl text-red-600 max-h-85 mb-100 overflow-y-auto transition-opacity duration-500 ease-in-out cursor-default`}
+          className={`flex flex-col text-center text-2xl md:text-4xl md:mb-120 text-red-600 max-h-85 overflow-y-auto cursor-default`}
         >
           <span className="w-96">5x The Ballon Dor&apos;s winner</span>
           <hr className="text-white" />
