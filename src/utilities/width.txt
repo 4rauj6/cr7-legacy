@@ -1,0 +1,21 @@
+laptop padrão - 1366 x 768
+laptop compacto - 1024 x 768
+
+
+Tipo de tela
+
+Resolução física comum
+
+Breakpoint recomendado
+
+Laptop compacto
+
+1024 × 768
+
+lg: — 1024px
+
+Laptop HD
+
+1366 × 768
+
+xl: — 1280px

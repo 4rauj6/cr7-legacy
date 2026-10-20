@@ -1,5 +1,5 @@
 import { ArrowDownIcon } from "@heroicons/react/16/solid";
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import CarouselHome from "../utilities/CarrouselHome";
 import The1000Goals from "../utilities/The1000GoalChart";
 import CareerDetails from "./CareerDetails";
@@ -13,14 +13,6 @@ function Homepage() {
     });
   };
 
-  const [fadeInHome, setFadeInHome] = useState(false);
-
-  useEffect(() => {
-    const frame = requestAnimationFrame(() => setFadeInHome(true));
-
-    return () => cancelAnimationFrame(frame);
-  }, []);
-
   return (
     <div className="hero bg-gray-900 w-full max-h-full overflow-x-hidden">
       <div className="relative">
@@ -30,51 +22,52 @@ function Homepage() {
           className=" w-full h-200 md:w-full md:h-full object-cover"
         />
         <div
-          className="absolute inset-0 left-40 bottom-70 z-10 flex flex-col justify-center items-center text-white text-3xl md:text-6xl 
+          className="absolute inset-0 left-40 bottom-70 z-10 flex flex-col justify-center items-center text-white text-3xl xl:text-5xl 
             md:justify-between
             md:flex-row
-            md:px-50
-            md:inset-0"
+            md:inset-0
+            xl:px-35
+            2xl:px-50"
         >
           <span
-            className={`${fadeInHome ? "fade-home" : ""} cursor-default hover:text-red-500 transition-colors font-syncopate`}
+            className={`cursor-default hover:text-red-500 transition-colors font-syncopate`}
           >
             Cristiano
           </span>
           <span
-            className={`${fadeInHome ? "fade-home" : ""} cursor-default hover:text-red-500 transition-colors font-syncopate`}
+            className={`cursor-default hover:text-red-500 transition-colors font-syncopate`}
           >
             Ronaldo
           </span>
         </div>
         <button
           onClick={goToRef}
-          className={`${fadeInHome ? "fade-home" : ""} absolute bottom-20 left-45 
-            md:left-270 
+          className={`absolute bottom-20 left-46
+            xl:left-245 
             md:-translate-x-1/2 
-            md:bottom-55
+            xl:bottom-60
             z-20
           `}
         >
-          <ArrowDownIcon className="size-10 text-white cursor-pointer hover:text-red-500" />
+          <ArrowDownIcon className="size-10 text-white cursor-pointer hover:text-red-500 transition-colors" />
         </button>
       </div>
 
-      <div ref={divRef} className="mt-40 mb-0 md:mt-40 md:mb-0 text-red-500">
-        <h2 className="flex justify-center items-center md:justify-start md:p-15 font-syncopate">
+      <div ref={divRef} className="mt-40 mb-0 md:mt-40 md:mb-0 text-red-500 ">
+        <span className="flex justify-center items-center text-2xl 2xl:text-3xl  xl:text-2xl md:justify-start md:p-15 font-syncopate">
           Teams preview
-        </h2>
+        </span>
         <CareerDetails />
       </div>
 
-      <div className=" text-red-600 mt-0 md:mt-40">
-        <span className="flex justify-center items-center text-center text-[22px] md:w-full md:ml-0 md:text-4xl md:justify-start md:items-start md:p-15 font-syncopate">
+      <div className="goat-div text-red-600 mt-0">
+        <span className="flex justify-center items-center text-center text-[22px] xl:text-2xl md:w-full md:ml-0 md:text-4xl md:justify-start md:items-start md:p-15 font-syncopate">
           The GOAT through the history
         </span>
         <CarouselHome />
       </div>
 
-      <div className="text-red-500 mt-25">
+      <div className="text-red-500 xl:mt-25">
         <span className="flex justify-center items-center text-[28px] gap-0 md:justify-start md:p-15 md:text-5xl font-syncopate">
           Achievements
         </span>
@@ -227,6 +220,7 @@ function Homepage() {
           />
           <span className="md:w-90">1x english super cup winner</span>
           <hr className="text-white" />
+          <img src="https://i.namu.wiki/i/QLQCcmhDarAVo1qRFamQI0cjFFB30ZkPjqEo-9RidNbD8gvAaNANz4HYEANY5KOsDrNEpXTEY4Er_-hMSRqlVg.webp" alt="" className="self-center w-40"/>
           <span className="md:w-90">1x saudi arabian champion</span>
           <hr className="text-white" />
           <span className="w-80 md:w-90">1x portuguese super cup winner</span>

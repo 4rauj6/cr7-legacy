@@ -74,3 +74,15 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #ff5260;
 }
+
+@media (width: 360px) {
+  .ttp {
+    width: 90%;
+    margin-left: 20px;
+    padding: 3px;
+  }
+
+  .goat-div span {
+    margin-top: 130px;
+  }
+}
