@@ -51,3 +51,26 @@
 .fade-home {
   animation: fadeInHome 1s ease-in-out both;
 }
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #ff2638 #151d2d;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #151d2d;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff2638;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff5260;
+}
