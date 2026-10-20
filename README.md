@@ -1,7 +1,7 @@
 *in dev link*
 
 # About
-
+The cr7-legacy project is a non-profit and open source web-site made by a Cristiano Ronaldo's fan to honor his legacy in the football world
 
 # React + Vite
 
