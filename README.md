@@ -14,8 +14,6 @@ The CR7 Legacy project is a non-profit and open source web-site made to honor Cr
 - 1. To improve the author's skills with Front-End (Web, Mobile, React and Tailwind) development.
 - 2. To create something new that can help someone.
 
-**4. Is this project open source?**
-
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
