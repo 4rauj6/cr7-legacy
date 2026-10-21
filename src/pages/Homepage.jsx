@@ -61,14 +61,14 @@ function Homepage() {
       </div>
 
       <div className="goat-div text-red-600  mt-40 xl:mt-50">
-        <span className="flex justify-center items-center text-center text-[22px] xl:text-2xl md:w-full md:ml-0 md:text-4xl md:justify-start md:items-start md:p-15 font-syncopate">
+        <span className="flex justify-center items-center text-center text-[20px] xl:text-2xl md:w-full md:ml-0 md:text-4xl md:justify-start md:items-start md:p-15 font-syncopate">
           The GOAT through the history
         </span>
         <CarouselHome />
       </div>
 
       <div className="text-red-500 mt-35 xl:mt-40">
-        <span className="flex justify-center items-center text-[28px] gap-0 xl:justify-start xl:p-15 xl:text-2xl md:text-5xl font-syncopate">
+        <span className="flex justify-center items-center text-2xl gap-0 xl:justify-start xl:p-15 xl:text-2xl md:text-5xl font-syncopate">
           Achievements
         </span>
       </div>
@@ -252,7 +252,7 @@ function Homepage() {
       </div>
 
       <div className="text-red-600 flex text-center mt-40 xl:text-start xl:p-15 xl:mt-0 font-syncopate">
-        <span className="xl:text-2xl">
+        <span className="text-xl xl:text-2xl">
           By the Portugal&apos;s national team
         </span>
       </div>
@@ -304,16 +304,31 @@ function Homepage() {
       </div>
 
       <div className="p-15 text-red-600 mt-20 xl:mt-40 font-syncopate">
-        <span className="flex text-2xl justify-center items-center text-center xl:flex-col xl:text-left xl:justify-start xl:items-start w-100 xl:text-2xl">
+        <span className="flex text-2xl justify-center items-center text-center w-100 xl:flex-col xl:text-left xl:justify-start xl:items-start xl:text-2xl">
           Road to to 1000 goals
         </span>
       </div>
 
-      <div className="flex flex-col">
+      <div className="flex flex-col mb-40">
         <The1000Goals />
       </div>
 
-      <div className="B"></div>
+      <div className="flex flex-row justify-start items-center font-dm-sans h-full bg-gray-800">
+        <div className="flex flex-row p-10 gap-20">
+          <ul className="text-gray-300 font-bold text-lg">Know more
+            <li><a href=""></a></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <ul className="text-gray-300 font-bold text-lg">About
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 }
