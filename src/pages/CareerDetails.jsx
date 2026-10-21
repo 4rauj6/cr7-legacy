@@ -70,7 +70,7 @@ function CareerDetails() {
   } = useNavegateBtns(selectedTeam);
 
   return (
-    <div className="hero-2 min-h-screen">
+    <div className="hero-2">
       <div className="flex flex-row justify-end mr-10 md:gap-3 md:mr-25 ">
         <button onClick={prev} className="text-gray-400 hover:text-red-600">
           <svg
@@ -117,10 +117,10 @@ function CareerDetails() {
           <span className="self-center md:self-start text-gray-400 font-dm-sans">
             {team.years}
           </span>
-          <hr className="text-white self-center w-80 md:self-start  xl:w-full md:w-100" />
+          <hr className="text-white self-center w-80 md:self-start xl:w-full md:w-100" />
           <p className="ttp font-dm-sans w-86 xl:w-120 md:w-160 text-base xl:text-base md:text-xl">
-  {team.text}
-</p>
+            {team.text}
+          </p>
         </div>
       </div>
     </div>

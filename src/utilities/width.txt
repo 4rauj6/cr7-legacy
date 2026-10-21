@@ -1,12 +1,4 @@
-laptop padrão - 1366 x 768
-laptop compacto - 1024 x 768
 
-
-Tipo de tela
-
-Resolução física comum
-
-Breakpoint recomendado
 
 Laptop compacto
 
@@ -19,3 +11,9 @@ Laptop HD
 1366 × 768
 
 xl: — 1280px
+
+Desktop Monitor HD/UHD
+
+1980 x 1200/1080
+
+xl: - 1280

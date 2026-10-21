@@ -24,7 +24,7 @@ function CarouselHome() {
             <img
               src="src/assets/cristiano-ronaldo-manchester-united-goal-pose-gci3sblv4abnui8u-2043014273.jpg"
               alt=""
-              className="d-block h-130 w-100 object-cover md:h-full md:w-full rounded"
+              className="d-block h-130 w-100 object-cover md:h-full md:w-10 rounded"
             />
           </Carousel.Item>
           <Carousel.Item>

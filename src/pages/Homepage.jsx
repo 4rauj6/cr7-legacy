@@ -26,7 +26,8 @@ function Homepage() {
             md:justify-between
             md:flex-row
             md:inset-0
-            xl:px-35
+            xl:px-34
+            lg:px-33
             2xl:px-50"
         >
           <span
@@ -42,10 +43,9 @@ function Homepage() {
         </div>
         <button
           onClick={goToRef}
-          className={`absolute bottom-20 left-46
-            xl:left-245 
-            md:-translate-x-1/2 
-            xl:bottom-60
+          className={`absolute
+            left-1/2 -translate-x-1/2 
+    bottom-10 md:bottom-20
             z-20
           `}
         >
@@ -53,56 +53,57 @@ function Homepage() {
         </button>
       </div>
 
-      <div ref={divRef} className="mt-40 mb-0 md:mt-40 md:mb-0 text-red-500 ">
-        <span className="flex justify-center items-center text-2xl 2xl:text-3xl  xl:text-2xl md:justify-start md:p-15 font-syncopate">
+      <div ref={divRef} className="mt-40 mb-0 xl:mt-50 text-red-500 ">
+        <span className="flex justify-center items-center text-2xl mb-10 xl:mb-0 2xl:text-3xl  xl:text-2xl md:justify-start md:p-15 font-syncopate">
           Teams preview
         </span>
         <CareerDetails />
       </div>
 
-      <div className="goat-div text-red-600 mt-0">
+      <div className="goat-div text-red-600  mt-40 xl:mt-50">
         <span className="flex justify-center items-center text-center text-[22px] xl:text-2xl md:w-full md:ml-0 md:text-4xl md:justify-start md:items-start md:p-15 font-syncopate">
           The GOAT through the history
         </span>
         <CarouselHome />
       </div>
 
-      <div className="text-red-500 xl:mt-25">
-        <span className="flex justify-center items-center text-[28px] gap-0 md:justify-start md:p-15 md:text-5xl font-syncopate">
+      <div className="text-red-500 mt-35 xl:mt-40">
+        <span className="flex justify-center items-center text-[28px] gap-0 xl:justify-start xl:p-15 xl:text-2xl md:text-5xl font-syncopate">
           Achievements
         </span>
       </div>
-      <div className="relative flex flex-col md:flex-row justify-center items-center gap-4 font-dm-sans">
+      <div className="relative flex flex-col xl:flex-row justify-center items-center gap-4 font-dm-sans">
         <div
-          className={`flex flex-col text-center text-4xl md:mb-100 cursor-default`}
+          className={`flex flex-col text-center text-4xl xl:mb-150 cursor-default`}
         >
-          <span className="font-syncopate text-xl mt-4 md:text-6xl md:w-96 md:text-center md:mb-0 text-red-500">
+          <span className="font-syncopate text-xl mt-4 xl:text-2xl md:text-6xl md:w-96 xl:text-center xl:mb-0 text-red-500">
             Player&apos;s profile
             <br />
-            <span className="font-dm-sans text-[15px] text-gray-400 md:text-2xl">
+            <span className="font-dm-sans text-[15px] text-gray-400 xl:text-xl">
               188cm | 05.02.1985 | Portugal
             </span>
           </span>
           <hr className="text-white" />
-          <div className=" flex flex-row w-80 gap-3 md:w-90 md:grid md:grid-cols-3 md:gap-4 justify-center items-center">
+          <div className=" flex flex-row w-80 gap-3 xl:w-86 xl:grid xl:grid-cols-4 md:gap-10 justify-center items-center">
             <a href="https://www.fpf.pt/pt/selecoes/futebol-masculino/selecao-a">
               <img
                 src="src/assets/Portugal_national_football_team_logo_crest-2592173146.png"
                 alt="portugal"
-                className="w-60 md:w-full"
+                className="w-60 xl:w-full"
               />
             </a>
             <a href="https://www.sporting.pt/">
               <img
                 src="src/assets/sporting-clube-de-portugal-logo-escudo-4270991534.png"
                 alt="sporting"
-                className="w-60 md:w-full"
+                className="w-60 xl:w-full"
               />
             </a>
             <a href="https://www.manutd.com/en">
               <img
                 src="src/assets/Manchester_United_FC_crest.svg"
                 alt="Manchester United"
+                className="w-full xl:w-full"
               />
             </a>
             <a href="https://www.realmadrid.com/en-US">
@@ -112,7 +113,7 @@ function Homepage() {
               <img
                 src="src/assets/juventus--white.ddcefc5a-2839346283.png"
                 alt="Juventus"
-                className="w-60 md:w-full"
+                className="w-60 xl:w-full"
               />
             </a>
             <a href="https://alnassr.sa/">
@@ -123,11 +124,11 @@ function Homepage() {
         <img
           src="src/assets/Cr7-PNG-HD-2540334386.png"
           alt="Individual Awards"
-          className="object-contain w-60 mt-4 md:w-80"
+          className="object-contain w-60 mt-4 xl:w-70 xl:mb-60"
         />
         <hr className="text-white" />
         <div
-          className={`flex flex-col text-center text-2xl gap-3 md:text-2xl md:mb-120 text-red-600 max-h-85 overflow-y-auto cursor-defaul`}
+          className={`flex flex-col text-center text-2xl gap-3 xl:text-2xl xl:mb-150 text-red-600 max-h-85 overflow-y-auto cursor-defaul`}
         >
           <img
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftiermaker.com%2Fimages%2Fmedia%2Fhero_images%2F2024%2F15978347%2Fballon-dor-tierlist-15978347%2F159783471777202724.png&f=1&nofb=1&ipt=338c1ef801f50df6da383de302dd37881b6fa0c8fdc6a181a0720dbda8bd120d&ipo=images"
@@ -141,21 +142,23 @@ function Homepage() {
             alt=""
             className="self-center w-26"
           />
-          <span className="w-90 md:w-95">5x UEFA Champions league winner</span>
+          <span className="w-90 xl:w-95">5x UEFA Champions league winner</span>
           <hr className="text-white" />
           <img
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-02z7dbyHAlM%2FXYCbHLxf2ZI%2FAAAAAAAACFs%2FmslF8ou00bI11TgDXtyXGKmIJbu3ZS1QwCLcBGAsYHQ%2Fs1600%2Fuefa%252Bsuper%252Bcup%252B250.png&f=1&nofb=1&ipt=d3e58a5b25ae48568855292875b161f390dfc7d1f5611269ac1bcab940ca8f82&ipo=images"
             alt=""
             className="self-center w-35"
           />
-          <span className="md:w-96">2x UEFA Super Cup Winner</span>
+          <span className="xl:w-96">2x UEFA Super Cup Winner</span>
           <hr className="text-white" />
           <img
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Ff6%2Faf%2Fff%2Ff6afff5fb10c1e7066869161735d096f.png&f=1&nofb=1&ipt=e39ddfbfa7ff2af4ccc12a3d21417efdc62a4fb58563094f683424fc1ecfaf72&ipo=images"
             alt=""
             className="self-center w-20"
           />
-          <span className="md:w-90">2x UEFA Nations League winner</span>
+          <span className="xl:w-80 self-center">
+            2x UEFA Nations League winner
+          </span>
           <hr className="text-white" />
           <img
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthesportsdb.com%2Fimages%2Ficons%2Fhonours%2FUEFA_Best_Player_in_Europe_Award-trophy.png&f=1&nofb=1&ipt=2e0b7ae746c81811084019bf81c78de6040df24abc50aec9b0632355e63134aa&ipo=images"
@@ -190,7 +193,7 @@ function Homepage() {
             alt=""
             className="self-center w-26"
           />
-          <span className="md:w-90">1x english FA Cup winner</span>
+          <span className="xl:w-90">1x english FA Cup winner</span>
           <hr className="text-white" />
           <img
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F66%2F0c%2F9a%2F660c9a02f1d14f56c1efe06db5d0d782.png&f=1&nofb=1&ipt=b6593c1ea46624c4f10ec6a7e9da03df5d5712cde0440a834681fa149f13cccb&ipo=images"
@@ -204,50 +207,66 @@ function Homepage() {
             alt=""
             className="self-center w-22"
           />
-          <span className="md:w-90">2x italian super cup Winner</span>
+          <span className="xl:w-70 self-center">
+            2x italian super cup Winner
+          </span>
           <hr className="text-white" />
           <img
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsortitoutsi.b-cdn.net%2Fuploads%2Ftrophy%2F1301423.png&f=1&nofb=1&ipt=ff6ebb31ada9e2a9874055b541935735951345b43df9c9c750e88e921578fa55&ipo=images"
             alt=""
             className="self-center w-43"
           />
-          <span className="md:w-90">2x spanish super cup winner</span>
+          <span className="xl:w-76 self-center">
+            2x spanish super cup winner
+          </span>
           <hr className="text-white" />
           <img
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F37%2F6a%2Fe9%2F376ae9123d867b2b77a2436d1e83c1a4.png&f=1&nofb=1&ipt=e78f6b50cbee93ccaa5cf201bfeaf6ab222a5d7f34eaa3c460d541d0dccd4e9d&ipo=images"
             alt=""
             className="self-center w-34"
           />
-          <span className="md:w-90">1x english super cup winner</span>
+          <span className="xl:w-80 self-center">
+            1x english super cup winner
+          </span>
           <hr className="text-white" />
-          <img src="https://i.namu.wiki/i/QLQCcmhDarAVo1qRFamQI0cjFFB30ZkPjqEo-9RidNbD8gvAaNANz4HYEANY5KOsDrNEpXTEY4Er_-hMSRqlVg.webp" alt="" className="self-center w-40"/>
-          <span className="md:w-90">1x saudi arabian champion</span>
+          <img
+            src="https://i.namu.wiki/i/QLQCcmhDarAVo1qRFamQI0cjFFB30ZkPjqEo-9RidNbD8gvAaNANz4HYEANY5KOsDrNEpXTEY4Er_-hMSRqlVg.webp"
+            alt=""
+            className="self-center w-40"
+          />
+          <span className="xl:w-90 self-center">1x saudi arabian champion</span>
           <hr className="text-white" />
-          <span className="w-80 md:w-90">1x portuguese super cup winner</span>
+          <span className="w-80 xl:w-80 self-center">
+            1x portuguese super cup winner
+          </span>
           <hr className="text-white" />
           <span>8x player of the year</span>
           <hr className="text-white" />
-          <span className="md:w-90">12x Footballer of the year</span>
+          <span className="xl:w-90 self-center">
+            12x Footballer of the year
+          </span>
           <hr className="text-white" />
           <span>22x top goal scorer</span>
           <hr className="text-white" />
         </div>
       </div>
 
-      <div className="text-red-600 flex text-center mt-40 md:text-start md:p-15 md:mt-20 font-syncopate">
-        <h2>By the Portugal&apos;s national team</h2>
+      <div className="text-red-600 flex text-center mt-40 xl:text-start xl:p-15 xl:mt-0 font-syncopate">
+        <span className="xl:text-2xl">
+          By the Portugal&apos;s national team
+        </span>
       </div>
 
       <div className="flex flex-col p-5 md:p-0 md:flex-row justify-center items-center gap-25">
         <img
           src="src/assets/Portugal_national_football_team_logo_crest-2592173146.png"
           alt=""
-          className="w-99 h-full object-contain"
+          className="w-90 h-full object-contain xl:w-70"
         />
-        <div className="flex flex-col self-center md:self-start md:w-125">
+        <div className="flex flex-col self-center md:self-start xl:w-100">
           <span className="text-gray-300 font-syncopate">
             Achivements <br />
-            <span className="text-red-600 text-[35px] font-dm-sans">
+            <span className="text-red-600 text-[35px] xl:text-[30px] font-dm-sans">
               1x Euro League champion
               <br />
               1x Nations League champion
@@ -256,35 +275,45 @@ function Homepage() {
           <hr className="text-white" />
           <span className="text-gray-300 font-syncopate">
             Apperances <br />
-            <span className="text-red-600 text-4xl font-dm-sans">233</span>
+            <span className="text-red-600 text-4xl xl:text-3xl font-dm-sans">
+              233
+            </span>
           </span>
           <hr className="text-white" />
           <span className="text-gray-300 font-syncopate">
             Goals <br />
-            <span className="text-red-600 text-4xl font-dm-sans">146</span>
+            <span className="text-red-600 text-4xl xl:text-3xl font-dm-sans">
+              146
+            </span>
           </span>
           <hr className="text-white" />
           <span className="text-gray-300 font-syncopate">
             Assists <br />
-            <span className="text-red-600 text-4xl font-dm-sans">45</span>
+            <span className="text-red-600 text-4xl xl:text-3xl font-dm-sans">
+              45
+            </span>
           </span>
           <hr className="text-white" />
           <span className="text-gray-300 font-syncopate">
             Minutes played <br />
-            <span className="text-red-600 text-4xl font-dm-sans">
+            <span className="text-red-600 text-4xl xl:text-3xl font-dm-sans">
               18.537&apos;
             </span>
           </span>
         </div>
       </div>
 
-      <div className="p-15 text-red-600 mt-20 font-syncopate">
-        <h2>Road to to 1000 goals</h2>
+      <div className="p-15 text-red-600 mt-20 xl:mt-40 font-syncopate">
+        <span className="flex text-2xl justify-center items-center text-center xl:flex-col xl:text-left xl:justify-start xl:items-start w-100 xl:text-2xl">
+          Road to to 1000 goals
+        </span>
       </div>
 
-      <div>
+      <div className="flex flex-col">
         <The1000Goals />
       </div>
+
+      <div className="B"></div>
     </div>
   );
 }
