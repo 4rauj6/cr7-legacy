@@ -1,16 +1,16 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Homepage from "./pages/Homepage";
-import CareerDetails from "./pages/CareerDetails";
 import "./index.css";
+import Error404 from "./utilities/404Error";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
+          <Route path="*" elememt={<Error404 />}></Route>
           <Route path="/" element={<Homepage />}></Route>
-          <Route path="/career-details" element={<CareerDetails />}></Route>
         </Routes>
       </BrowserRouter>
     </>
