@@ -1,8 +1,17 @@
 @import "tailwindcss";
 
-@theme {
+:root {
   --font-syncopate: "Syncopate", sans-serif;
   --font-dm-sans: "DM Sans", sans-serif;
+  font-family: var(--font-dm-sans);
+}
+
+.font-syncopate {
+  font-family: var(--font-syncopate);
+}
+
+.font-dm-sans {
+  font-family: var(--font-dm-sans);
 }
 
 .carousel-control-next-icon,
@@ -73,6 +82,19 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #ff5260;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(156, 156, 156);
+}
+
+a:hover {
+  color:#ff2638
+}
+
+ul span {
+  color: rgb(156, 156, 156);
 }
 
 @media (width: 360px) {

@@ -3,6 +3,8 @@ import { useRef } from "react";
 import CarouselHome from "../utilities/CarrouselHome";
 import The1000Goals from "../utilities/The1000GoalChart";
 import CareerDetails from "./CareerDetails";
+import { IoLogoGithub } from "react-icons/io";
+import { IoPersonSharp } from "react-icons/io5";
 
 function Homepage() {
   const divRef = useRef(null);
@@ -313,23 +315,33 @@ function Homepage() {
         <The1000Goals />
       </div>
 
-      <div className="flex flex-row justify-start items-center font-dm-sans h-full bg-gray-800">
-        <div className="flex flex-row p-10 gap-20">
-          <ul className="text-gray-300 font-bold text-lg">Know more
-            <li><a href=""></a></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-          <ul className="text-gray-300 font-bold text-lg">About
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-      </div>
+      
+    <div className="flex justify-start items-start font-dm-sans h-full bg-gray-800">
+      <footer className="flex flex-row gap-10 p-6 w-full">
+        <ul className="flex flex-col text-white">
+          <h3 className="font-bold text-lg">Know more about CR7 Legacy</h3>
+          <li>
+            <a
+              href="https://github.com/4rauj6/cr7-legacy"
+              rel="noopener noreferrer"
+              className="flex gap-1"
+            >
+              <IoLogoGithub className="text-xl"/>
+              GitHub documentation
+            </a>
+            <a href="https://github.com/4rauj6" rel="noopener noreferrer" className="flex gap-1">
+              <IoPersonSharp />
+              Author&apos;s profile
+            </a>
+          </li>
+
+          <div className="mt-4.5">
+            <span>© 2026 | Made by João Victor &apos;&apos;4rauj6&apos;&apos; | The rights of all images, icons and fonts are reserved for their owners.</span>
+          </div>
+        </ul>
+      </footer>
     </div>
+  </div>
   );
 }
 
