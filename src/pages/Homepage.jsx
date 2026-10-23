@@ -3,8 +3,10 @@ import { useRef } from "react";
 import CarouselHome from "../utilities/CarrouselHome";
 import The1000Goals from "../utilities/The1000GoalChart";
 import CareerDetails from "./CareerDetails";
-import { IoLogoGithub } from "react-icons/io";
-import { IoPersonSharp } from "react-icons/io5";
+import { FaGithub } from "react-icons/fa";
+import { FaUser } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaInbox } from "react-icons/fa";
 
 function Homepage() {
   const divRef = useRef(null);
@@ -315,33 +317,55 @@ function Homepage() {
         <The1000Goals />
       </div>
 
-      
-    <div className="flex justify-start items-start font-dm-sans h-full bg-gray-800">
-      <footer className="flex flex-row gap-10 p-6 w-full">
-        <ul className="flex flex-col text-white">
-          <h3 className="font-bold text-lg">Know more about CR7 Legacy</h3>
-          <li>
-            <a
-              href="https://github.com/4rauj6/cr7-legacy"
-              rel="noopener noreferrer"
-              className="flex gap-1"
-            >
-              <IoLogoGithub className="text-xl"/>
-              GitHub documentation
-            </a>
-            <a href="https://github.com/4rauj6" rel="noopener noreferrer" className="flex gap-1">
-              <IoPersonSharp />
-              Author&apos;s profile
-            </a>
-          </li>
+      <div className="flex justify-center items-center xl:justify-start xl:items-start lg:justify-start lg:items-start font-dm-sans h-full bg-gray-800">
+        <footer className="flex flex-col xl:flex-row gap-2 xl:gap-7 p-6 w-full">
+          <ul className="flex flex-col text-white">
+            <h3 className="font-bold text-lg">About the CR7 Legacy project</h3>
+            <li>
+              <a
+                href="https://github.com/4rauj6/cr7-legacy"
+                rel="noopener noreferrer"
+                className="flex gap-1"
+              >
+                <FaGithub className="text-xl" />
+                GitHub documentation
+              </a>
+              <a
+                href="https://github.com/4rauj6"
+                rel="noopener noreferrer"
+                className="flex gap-1"
+              >
+                <FaUser className="text-xl" />
+                Author&apos;s profile
+              </a>
+            </li>
+          </ul>
 
-          <div className="mt-4.5">
-            <span>© 2026 | Made by João Victor &apos;&apos;4rauj6&apos;&apos; | The rights of all images, icons and fonts are reserved for their owners.</span>
-          </div>
-        </ul>
-      </footer>
+          <ul className="flex flex-col text-white">
+            <h3 className="font-bold text-lg">Contact me</h3>
+            <li>
+              <a
+                href="https://instagram.com/jvvict0r"
+                rel="noopener noreferrer"
+                className="flex gap-1"
+              >
+                <FaInstagram className="text-xl" />
+                Instagram
+              </a>
+
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=joaovas123m@gmail.com"
+                rel="noopener noreferrer"
+                className="flex gap-1"
+              >
+                <FaInbox className="text-xl" />
+                eMail
+              </a>
+            </li>
+          </ul>
+        </footer>
+      </div>
     </div>
-  </div>
   );
 }
 
