@@ -5,12 +5,14 @@ import "./index.css";
 import Error404 from "./utilities/404Error";
 
 function App() {
+  const basename = import.meta.env.DEV ? "" : "/cr7-legacy";
   return (
     <>
-      <BrowserRouter basename="/cr7-legacy">
+      <BrowserRouter basename={basename}>
         <Routes>
           <Route path="/404" element={<Error404 />}></Route>
           <Route path="/" element={<Homepage />}></Route>
+          <Route path="/*" element={<Error404 />}></Route>
         </Routes>
       </BrowserRouter>
     </>

@@ -1,9 +1,15 @@
 import useNavegateBtns from "../utilities/navegateBtns";
+import portugalCrest from "../assets/Portugal_national_football_team_logo_crest-2592173146.png";
+import sportingCrest from "../assets/sporting-clube-de-portugal-logo-escudo-4270991534.png";
+import manchesterUnitedCrest from "../assets/Manchester_United_FC_crest.svg";
+import realMadridCrest from "../assets/Real_Madrid_CF.svg";
+import juventusCrest from "../assets/juventus--white.ddcefc5a-2839346283.png";
+import alNassrCrest from "../assets/Nassr_FC_Logo.svg.webp";
 
 function CareerDetails() {
   const selectedTeam = [
     {
-      logo: "src/assets/Portugal_national_football_team_logo_crest-2592173146.png",
+      logo: portugalCrest,
       name: "portugal",
       header: "Portugal",
       years: "2003-Currently",
@@ -13,7 +19,7 @@ function CareerDetails() {
     },
 
     {
-      logo: "src/assets/sporting-clube-de-portugal-logo-escudo-4270991534.png",
+      logo: sportingCrest,
       name: "sporting",
       header: "Sporting Portugal",
       years: "2001-2003",
@@ -23,7 +29,7 @@ function CareerDetails() {
     },
 
     {
-      logo: "src/assets/Manchester_United_FC_crest.svg",
+      logo: manchesterUnitedCrest,
       name: "united",
       header: "Manchester United FC",
       years: "2003-2010 | 2021-2022",
@@ -32,7 +38,7 @@ function CareerDetails() {
     },
 
     {
-      logo: "src/assets/Real_Madrid_CF.svg",
+      logo: realMadridCrest,
       name: "rm",
       header: "Real Madrid FC",
       years: "2010-2018",
@@ -42,7 +48,7 @@ function CareerDetails() {
     },
 
     {
-      logo: "src/assets/juventus--white.ddcefc5a-2839346283.png",
+      logo: juventusCrest,
       name: "juve",
       header: "Juventus FC",
       years: "2018-2021",
@@ -52,7 +58,7 @@ function CareerDetails() {
     },
 
     {
-      logo: "src/assets/Nassr_FC_Logo.svg.webp",
+      logo: alNassrCrest,
       name: "nassr",
       header: "Al-Nassr",
       years: "2023-Currently",

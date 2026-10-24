@@ -9,6 +9,14 @@ import { FaInstagram } from "react-icons/fa";
 import { FaInbox } from "react-icons/fa";
 import { FaBook } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import cristianoRonaldo5k from "../assets/cristiano_ronaldo_5k_2.jpg";
+import portugalCrest from "../assets/Portugal_national_football_team_logo_crest-2592173146.png";
+import sportingCrest from "../assets/sporting-clube-de-portugal-logo-escudo-4270991534.png";
+import manchesterUnitedCrest from "../assets/Manchester_United_FC_crest.svg";
+import realMadridCrest from "../assets/Real_Madrid_CF.svg";
+import juventusCrest from "../assets/juventus--white.ddcefc5a-2839346283.png";
+import alNassrCrest from "../assets/Nassr_FC_Logo.svg.webp";
+import cr7Profile from "../assets/Cr7-PNG-HD-2540334386.png";
 
 function Homepage() {
   const divRef = useRef(null);
@@ -23,7 +31,7 @@ function Homepage() {
     <div className="hero bg-gray-900 w-full max-h-full overflow-x-hidden">
       <div className="relative">
         <img
-          src="src/assets/cristiano_ronaldo_5k_2.jpg"
+          src={cristianoRonaldo5k}
           alt=""
           className=" w-full h-200 md:w-full md:h-full object-cover"
         />
@@ -90,42 +98,42 @@ function Homepage() {
           <div className=" flex flex-row w-80 gap-3 lg:grid lg:grid-cols-3 lg:w-50 lg:self-center xl:w-80 xl:grid xl:grid-cols-4 2xl:grid-cols-4 2xl:w-100 md:gap-100 justify-center items-center">
             <a href="https://www.fpf.pt/pt/selecoes/futebol-masculino/selecao-a">
               <img
-                src="src/assets/Portugal_national_football_team_logo_crest-2592173146.png"
+                src={portugalCrest}
                 alt="portugal"
                 className="w-60 xl:w-full 2xl:w-100"
               />
             </a>
             <a href="https://www.sporting.pt/">
               <img
-                src="src/assets/sporting-clube-de-portugal-logo-escudo-4270991534.png"
+                src={sportingCrest}
                 alt="sporting"
                 className="w-60 xl:w-full 2xl:w-100"
               />
             </a>
             <a href="https://www.manutd.com/en">
               <img
-                src="src/assets/Manchester_United_FC_crest.svg"
+                src={manchesterUnitedCrest}
                 alt="Manchester United"
                 className="w-full xl:w-full 2xl:w-full"
               />
             </a>
             <a href="https://www.realmadrid.com/en-US">
-              <img src="src/assets/Real_Madrid_CF.svg" alt="Real Madrid" />
+              <img src={realMadridCrest} alt="Real Madrid" />
             </a>
             <a href="https://www.juventus.com/en/">
               <img
-                src="src/assets/juventus--white.ddcefc5a-2839346283.png"
+                src={juventusCrest}
                 alt="Juventus"
                 className="w-60 xl:w-full 2xl:w-100"
               />
             </a>
             <a href="https://alnassr.sa/">
-              <img src="src/assets/Nassr_FC_Logo.svg.webp" alt="Al-Nassr" />
+              <img src={alNassrCrest} alt="Al-Nassr" />
             </a>
           </div>
         </div>
         <img
-          src="src/assets/Cr7-PNG-HD-2540334386.png"
+          src={cr7Profile}
           alt="Individual Awards"
           className="object-contain w-60 mt-4 lg:w-50 lg:mb-40 xl:w-80 xl:mb-60 2xl:w-120"
         />
@@ -270,7 +278,7 @@ function Homepage() {
       </div>
       <div className="flex flex-col p-5 md:p-0 md:flex-row justify-center items-center md:gap-25 2xl:gap-40">
         <img
-          src="src/assets/Portugal_national_football_team_logo_crest-2592173146.png"
+          src={portugalCrest}
           alt=""
           className="w-55 h-full mb-10 object-contain xl:w-70 2xl:w-100"
         />
