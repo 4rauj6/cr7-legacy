@@ -9,7 +9,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="*" elememt={<Error404 />}></Route>
+          <Route path="/404" element={<Error404 />}></Route>
           <Route path="/" element={<Homepage />}></Route>
         </Routes>
       </BrowserRouter>
