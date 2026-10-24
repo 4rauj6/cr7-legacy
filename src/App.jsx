@@ -7,7 +7,7 @@ import Error404 from "./utilities/404Error";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename="/cr7-legacy">
         <Routes>
           <Route path="/404" element={<Error404 />}></Route>
           <Route path="/" element={<Homepage />}></Route>
