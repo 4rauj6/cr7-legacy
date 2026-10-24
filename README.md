@@ -1,4 +1,4 @@
-*in dev link*
+https://4rauj6.github.io/cr7-legacy/
 
 # About CR7 Legacy
 The CR7 Legacy project is a non-profit and open source web-site made to honor Cristiano Ronaldo's legacy to the football world.
