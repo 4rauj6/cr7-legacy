@@ -36,23 +36,23 @@ function Homepage() {
           className=" w-full h-200 md:w-full md:h-full object-cover"
         />
         <div
-          className="absolute inset-0 left-40 bottom-70 z-10 flex flex-col justify-center items-center text-white text-3xl xl:text-5xl 
+          className="absolute inset-0 left-40 bottom-70 z-10 flex flex-col justify-center items-center text-white upper-case text-3xl xl:text-[68px] 
             md:justify-between
             md:flex-row
             md:inset-0
-            xl:px-34
-            lg:px-33
+            xl:px-21
+            lg:px-45
             2xl:px-70"
         >
           <span
-            className={`cursor-default hover:text-red-500 transition-colors font-syncopate`}
+            className={`cursor-default hover:text-red-500 transition-colors font-outfit font-bold`}
           >
-            Cristiano
+            CRISTIANO
           </span>
           <span
-            className={`cursor-default hover:text-red-500 transition-colors font-syncopate`}
+            className={`cursor-default hover:text-red-500 transition-colors font-outfit font-bold xl:mr-10`}
           >
-            Ronaldo
+            RONALDO
           </span>
         </div>
         <button
@@ -66,35 +66,35 @@ function Homepage() {
           <ArrowDownIcon className="size-10 text-white cursor-pointer hover:text-red-500 transition-colors" />
         </button>
       </div>
-      <div ref={divRef} className="mt-40 mb-0 xl:mt-50 text-red-500 ">
-        <span className="flex justify-center items-center text-2xl mb-10 xl:mb-0 xl:text-2xl  2xl:text-4xl md:justify-start md:p-15 font-syncopate">
-          Teams preview
+      <div ref={divRef} className="mt-40 mb-0 xl:mt-50 text-red-500">
+        <span className="flex justify-center items-center text-2xl mb-10 xl:mb-0 lg:text-4xl xl:text-5xl 2xl:text-4xl md:justify-start md:p-15 font-outfit font-bold">
+          TEAM PREVIEW
         </span>
         <CareerDetails />
       </div>
-      <div className="goat-div text-red-600  mt-40 xl:mt-50">
-        <span className="flex justify-center items-center text-center text-[20px] xl:text-2xl 2xl:text-4xl md:w-full md:ml-0 md:text-4xl md:justify-start md:items-start md:p-15 font-syncopate">
-          The GOAT through the history
+      <div className="goat-div text-red-600 mt-40 xl:mt-50">
+        <span className="flex justify-center items-center text-center text-[20px] xl:text-5xl 2xl:text-4xl md:w-full md:ml-0 md:text-4xl md:justify-start md:items-start md:p-15 font-outfit font-bold">
+          THROUGH THE HISTORY
         </span>
         <CarouselHome />
       </div>
       <div className="text-red-500 mt-35 xl:mt-40">
-        <span className="flex justify-center items-center text-2xl gap-0 lg:justify-start lg:text-2xl lg:p-15 xl:justify-start xl:p-15 xl:text-2xl  2xl:text-4xl md:text-5xl font-syncopate">
-          Achievements
+        <span className="flex justify-center items-center text-2xl gap-0 lg:justify-start lg:text-4xl lg:p-15 xl:justify-start xl:p-15 xl:text-5xl 2xl:text-4xl md:text-5xl font-outfit font-bold">
+          ACHIEVEMENTS
         </span>
       </div>
-      <div className="relative flex flex-col lg:flex-row xl:flex-row justify-center items-center xl:gap-10 lg:gap-0 2xl:gap-15 font-dm-sans">
+      <div className="relative flex flex-col lg:flex-row xl:flex-row justify-center items-center xl:gap-8 lg:gap-4 2xl:gap-15 font-dm-sans">
         <div
-          className={`flex flex-col text-center text-4xl lg:mb-100 xl:self-center xl:mb-150 2xl:mb-230 cursor-default`}
+          className={`flex flex-col text-center text-4xl lg:mb-100 lg:w-80 xl:self-center xl:mb-210 2xl:mb-230 cursor-default`}
         >
-          <span className="font-syncopate text-xl mt-4 lg:text-2xl xl:w-full xl:text-3xl 2xl:text-6xl 2xl:w-100 md:text-6xl md:w-96 xl:text-center xl:mb-0 text-red-500">
-            Player&apos;s profile
+          <span className="font-outfit text-xl mt-4 lg:text-3xl xl:w-full xl:text-3xl 2xl:text-6xl 2xl:w-100 md:text-6xl md:w-96 xl:self-center lg:self-center xl:mb-0 text-red-500 font-semibold">
+            Cristiano Ronaldo
             <br />
-            <span className="font-dm-sans text-[15px] text-gray-400 xl:text-xl 2xl:">
+            <span className="font-dm-sans text-[20px] text-gray-400 xl:text-xl 2xl: font-normal">
               188cm | 05.02.1985 | Portugal
             </span>
           </span>
-          <hr className="text-white lg:self-center lg:w-60 xl:w-full 2xl:w-full" />
+          <hr className="text-white lg:self-center lg:w-80 xl:w-full 2xl:w-full" />
           <div className=" flex flex-row w-80 gap-3 lg:grid lg:grid-cols-3 lg:w-50 lg:self-center xl:w-80 xl:grid xl:grid-cols-4 2xl:grid-cols-4 2xl:w-100 md:gap-100 justify-center items-center">
             <a href="https://www.fpf.pt/pt/selecoes/futebol-masculino/selecao-a">
               <img
@@ -135,16 +135,16 @@ function Homepage() {
         <img
           src={cr7Profile}
           alt="Individual Awards"
-          className="object-contain w-60 mt-4 lg:w-50 lg:mb-40 xl:w-80 xl:mb-60 2xl:w-120"
+          className="object-contain w-60 mt-4 lg:w-58 lg:mb-40 xl:w-90 xl:mb-60 2xl:w-120"
         />
         <hr className="text-white" />
         <div
-          className={`flex flex-col text-center text-2xl gap-3 xl:text-2xl lg:mb-66 xl:mb-150 lg:w-90 2xl:w-100 2xl:mb-250 text-red-600 max-h-85 overflow-y-auto cursor-defaul`}
+          className={`flex flex-col text-center text-2xl gap-3 xl:text-2xl lg:mb-70 xl:mb-190  xl:w-96 lg:w-70 2xl:w-100 2xl:mb-250 text-red-600 max-h-85 overflow-y-auto cursor-defaul`}
         >
           <img
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftiermaker.com%2Fimages%2Fmedia%2Fhero_images%2F2024%2F15978347%2Fballon-dor-tierlist-15978347%2F159783471777202724.png&f=1&nofb=1&ipt=338c1ef801f50df6da383de302dd37881b6fa0c8fdc6a181a0720dbda8bd120d&ipo=images"
             alt=""
-            className="self-center w-35  xl:w-20 lg:w-18"
+            className="self-center w-35  xl:w-22 lg:w-18"
           />
           <span className="md:w-96 lg:w-60 self-center">
             5x The Ballon Dor&apos;s winner
@@ -271,64 +271,67 @@ function Homepage() {
           <hr className="text-white lg:self-center lg:w-60 2xl:w-full xl:w-80" />
         </div>
       </div>
-      <div className="text-red-600 flex text-center mt-40 xl:text-start xl:p-15 xl:mt-0 font-syncopate">
-        <span className="text-xl xl:text-2xl 2xl:text-4xl">
-          By the Portugal&apos;s national team
+      <div className="text-red-600 flex text-center mt-40 xl:text-start xl:p-15 xl:mt-0 lg:text-start lg:p-15 lg:mt-0 font-outfit">
+        <span className="text-xl lg:text-4xl xl:text-5xl 2xl:text-4xl font-bold">
+          BY THE NATION
         </span>
       </div>
       <div className="flex flex-col p-5 md:p-0 md:flex-row justify-center items-center md:gap-25 2xl:gap-40">
         <img
           src={portugalCrest}
           alt=""
-          className="w-55 h-full mb-10 object-contain xl:w-70 2xl:w-100"
+          className="w-55 h-full mb-10 object-contain xl:w-90 2xl:w-100"
         />
         <div className="flex flex-col self-center md:self-start xl:w-100 2xl:w-150">
-          <span className="text-gray-300 font-syncopate">
+          <span className="text-gray-300 font-outfit">
             Achivements <br />
-            <span className="text-red-600 text-[24px] w-full xl:text-[30px] 2xl:text-[40px] font-dm-sans">
+            <span className="text-red-600 text-[24px] w-full xl:text-[29px] 2xl:text-[40px] font-dm-sans font-bold">
               1x Euro League champion
               <br />
               1x Nations League champion
             </span>
           </span>
           <hr className="text-white" />
-          <span className="text-gray-300 font-syncopate">
+          <span className="text-gray-300 font-outfit">
             Apperances <br />
-            <span className="text-red-600 text-3xl xl:text-3xl 2xl:text-[40px] font-dm-sans">
+            <span className="text-red-600 text-3xl xl:text-3xl 2xl:text-[40px] font-dm-sans font-bold">
               233
             </span>
           </span>
           <hr className="text-white" />
-          <span className="text-gray-300 font-syncopate">
+          <span className="text-gray-300 font-outfit">
             Goals <br />
-            <span className="text-red-600 text-3xl xl:text-3xl 2xl:text-[40px] font-dm-sans">
+            <span className="text-red-600 text-3xl xl:text-3xl 2xl:text-[40px] font-dm-sans font-bold">
               146
             </span>
           </span>
           <hr className="text-white" />
-          <span className="text-gray-300 font-syncopate">
+          <span className="text-gray-300 font-outfit">
             Assists <br />
-            <span className="text-red-600 text-3xl xl:text-3xl 2xl:text-[40px] font-dm-sans">
+            <span className="text-red-600 text-3xl xl:text-3xl 2xl:text-[40px] font-dm-sans font-bold">
               45
             </span>
           </span>
           <hr className="text-white" />
-          <span className="text-gray-300 font-syncopate">
+          <span className="text-gray-300 font-outfit">
             Minutes played <br />
-            <span className="text-red-600 text-3xl xl:text-3xl 2xl:text-[40px] font-dm-sans">
+            <span className="text-red-600 text-3xl xl:text-3xl 2xl:text-[40px] font-dm-sans font-bold">
               18.537&apos;
             </span>
           </span>
         </div>
       </div>
-      <div className="p-15 text-red-600 mt-20 xl:mt-40 font-syncopate">
-        <span className="flex text-2xl justify-center items-center text-center w-100 xl:flex-col xl:text-left xl:justify-start xl:items-start xl:text-2xl">
-          Road to to 1000 goals
+      <div className="p-15 text-red-600 mt-20 xl:mt-40 font-outfit">
+        <span className="flex text-2xl justify-center items-center text-center w-100 xl:flex-col xl:text-left xl:justify-start xl:items-start xl:text-5xl lg:text-left lg:justify-start lg:items-start font-bold">
+          ROAD TO THE 1000s
         </span>
       </div>
       <div className="flex flex-col mb-40">
         <The1000Goals />
       </div>
+
+      <div className="bg-red-600"></div>
+
       <div className="flex justify-center items-center xl:justify-start xl:items-start lg:justify-start lg:items-start font-dm-sans h-full bg-gray-800">
         <footer className="flex flex-col xl:flex-row gap-2 xl:gap-7 p-6 w-full">
           <ul className="flex flex-col text-white">

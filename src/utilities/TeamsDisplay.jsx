@@ -30,7 +30,7 @@ function TeamsDisplay() {
             ${isOnLogo === 0 ? "opacity-100 translate-x-0 w-180 z-10" : "opacity-0 translate-0 z-0 w-0"}`}
           >
             <div className="flex flex-col ml-55 mt-3">
-              <span className="text-3xl text-red-600 font-syncopate">
+              <span className="text-3xl text-red-600 font-outfit">
                 Sporting Portugal
               </span>
               <span className="text-xl text-gray-300 mt-2 font-dm-sans">
@@ -60,7 +60,7 @@ function TeamsDisplay() {
             ${isOnLogo === 1 ? "opacity-100 translate-x-0 w-210 z-10" : "opacity-0 translate-0 z-0 w-0"}`}
           >
             <div className="flex flex-col ml-60 mt-3">
-              <span className="text-3xl text-red-600 font-syncopate">
+              <span className="text-3xl text-red-600 font-outfit">
                 Manchester United FC
               </span>
               <span className="text-xl text-gray-300 mt-2 font-dm-sans">
@@ -99,7 +99,7 @@ function TeamsDisplay() {
             ${isOnLogo === 2 ? "opacity-100 translate-x-0 w-170 z-10" : "opacity-0 translate-0 z-0 w-0"}`}
           >
             <div className="flex flex-col ml-50 mt-3">
-              <span className="text-3xl text-red-600 font-syncopate">
+              <span className="text-3xl text-red-600 font-outfit">
                 Real Madrid CF
               </span>
               <span className="text-xl text-gray-300 mt-2 font-dm-sans">
@@ -128,7 +128,7 @@ function TeamsDisplay() {
             ${isOnLogo === 3 ? "opacity-100 translate-x-0 w-160 z-10" : "opacity-0 translate-x-20 z-0 w-0"}`}
           >
             <div className="flex flex-col ml-0 mt-3">
-              <span className="text-3xl text-red-600 font-syncopate">
+              <span className="text-3xl text-red-600 font-outfit">
                 Juventus FC
               </span>
               <span className="text-xl text-gray-200 mt-2 font-dm-sans">
@@ -157,7 +157,7 @@ function TeamsDisplay() {
             ${isOnLogo === 4 ? "opacity-100 translate-x-0 w-160 z-10" : "opacity-0 translate-0 z-0 w-0"}`}
           >
             <div className="flex flex-col mt-3">
-              <span className="text-3xl font-syncopate">Al-Nassr</span>
+              <span className="text-3xl font-outfit">Al-Nassr</span>
               <span className="text-xl text-gray-200 mt-2 font-dm-sans">
                 2022-currently
               </span>

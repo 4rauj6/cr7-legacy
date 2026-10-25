@@ -2,12 +2,17 @@
 
 :root {
   --font-syncopate: "Syncopate", sans-serif;
+  --font-outfit: "Outfit", sans-serif;
   --font-dm-sans: "DM Sans", sans-serif;
   font-family: var(--font-dm-sans);
 }
 
 .font-syncopate {
   font-family: var(--font-syncopate);
+}
+
+.font-outfit {
+  font-family: var(--font-outfit);
 }
 
 .font-dm-sans {
@@ -90,7 +95,7 @@ a {
 }
 
 a:hover {
-  color:#ff2638
+  color: #ff2638;
 }
 
 ul span {

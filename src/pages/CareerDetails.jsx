@@ -11,7 +11,7 @@ function CareerDetails() {
     {
       logo: portugalCrest,
       name: "portugal",
-      header: "Portugal",
+      header: "PORTUGAL",
       years: "2003-Currently",
       size: "w-[200px] lg:w-[200px] xl:w-[280px] 2xl:w-[400px]",
       place: "ml-[0px] md:ml-[90px]",
@@ -21,7 +21,7 @@ function CareerDetails() {
     {
       logo: sportingCrest,
       name: "sporting",
-      header: "Sporting Portugal",
+      header: "SPORTING PORTUGAL",
       years: "2001-2003",
       size: "w-[200px] lg:w-[200px] xl:w-[280px] 2xl:w-[390px]",
       place: "ml-[0px] md:mb-[100px] md:ml-[90px]",
@@ -31,7 +31,7 @@ function CareerDetails() {
     {
       logo: manchesterUnitedCrest,
       name: "united",
-      header: "Manchester United FC",
+      header: "MANCHESTER UNITED FC",
       years: "2003-2010 | 2021-2022",
       size: "w-[230px] ml-[0px] lg:w-[250px] xl:w-[320px] md:w-[500px] md:ml-[40px] lg:mb-[200px] xl:mb-[100px]",
       text: "In 2003, Cristiano Ronaldo arrived in england, now, to play in the Man. United squad. Cristiano's skills increased so well during his time in Old Trafford that even still being a young player, he became the most clinical finisher and dribbler of the world. from 2007 to 2009, the red devils won three times in a row the PL. In 2008 season CR7 won the UCL and the Ballon D'or. Cristiano Ronaldo still one of the greatest player of Manchester United's team. In 2021, he made his return to Old Trafford and break another record becaming the all-time goalscorer of the season.",
@@ -40,7 +40,7 @@ function CareerDetails() {
     {
       logo: realMadridCrest,
       name: "rm",
-      header: "Real Madrid FC",
+      header: "REAL MADRID FC",
       years: "2010-2018",
       size: "w-[200px] lg:w-[200px] xl:w-[280px] md:w-[420px]",
       place: "mb-[0px] ml[0px] lg:mb-[200px] md:ml-[90px]",
@@ -50,7 +50,7 @@ function CareerDetails() {
     {
       logo: juventusCrest,
       name: "juve",
-      header: "Juventus FC",
+      header: "JUVENTUS FC",
       years: "2018-2021",
       size: "w-[190px] lg:w-[210px] xl:w-[280px] md:w-[500px]",
       place: "mt-0 ml-[0px] xl:mb-[60px] lg:mb-[270px]",
@@ -60,7 +60,7 @@ function CareerDetails() {
     {
       logo: alNassrCrest,
       name: "nassr",
-      header: "Al-Nassr",
+      header: "AL-NASSR",
       years: "2023-Currently",
       size: "w-[210px] lg:w-[220px] xl:w-[300px] md:w-[500px]",
       place: "mt-[0px] ml-[0px] xl:mb-[100px] lg:mb-[270  px] md:ml-[50px]",
@@ -117,7 +117,7 @@ function CareerDetails() {
           className={`${team.size} ${team.place} fade-in ml-5 `}
         />
         <div className="flex flex-col self-center md:self-start text-red-600 mt-3 md:mt-20 md:ml-20 fade-in">
-          <p className="self-center md:self-start text-xl lg:text-3xl md:text-4xl font-syncopate">
+          <p className="self-center md:self-start text-xl lg:text-3xl md:text-4xl xl:text-5xl font-outfit font-bold">
             {team.header}
           </p>
           <span className="self-center md:self-start text-gray-400 font-dm-sans">
