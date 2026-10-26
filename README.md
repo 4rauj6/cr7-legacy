@@ -2,6 +2,17 @@ https://4rauj6.github.io/cr7-legacy/
 
 # About CR7 Legacy
 The CR7 Legacy project is a non-profit and open source web-site made to honor Cristiano Ronaldo's legacy to the football world.
+<img width="1912" height="1198" alt="image" src="https://github.com/user-attachments/assets/971778a0-d437-48ee-b9bb-c1cf90d7ee1d" />
+<img width="1917" height="1198" alt="image" src="https://github.com/user-attachments/assets/8adfc909-0cdb-4539-ba78-6ba5542a8381" />
+<img width="1917" height="1198" alt="image" src="https://github.com/user-attachments/assets/57dede10-4c43-4db1-bcba-a41470d7293f" />
+<img width="1917" height="1095" alt="image" src="https://github.com/user-attachments/assets/cab5d0af-f6cf-4771-ba08-7b3159ac5356" />
+<img width="522" height="982" alt="image" src="https://github.com/user-attachments/assets/fb94d435-b0b9-40de-b991-93fefc977003" />
+<img width="518" height="931" alt="image" src="https://github.com/user-attachments/assets/1299a698-7166-4770-ae29-0aa44b88a527" />
+<img width="502" height="1048" alt="image" src="https://github.com/user-attachments/assets/d4c7949c-c29a-425b-9d0f-ed5154a4ecd4" />
+
+
+
+
 
 ### What are the main goals of this project?
 **1. Honor CR7's career.**
