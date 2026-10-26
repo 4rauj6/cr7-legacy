@@ -17,6 +17,7 @@ import realMadridCrest from "../assets/Real_Madrid_CF.svg";
 import juventusCrest from "../assets/juventus--white.ddcefc5a-2839346283.png";
 import alNassrCrest from "../assets/Nassr_FC_Logo.svg.webp";
 import cr7Profile from "../assets/Cr7-PNG-HD-2540334386.png";
+import cr7FrontHistory from "../assets/Cristiano-ronaldo-9.png";
 
 function Homepage() {
   const divRef = useRef(null);
@@ -66,14 +67,16 @@ function Homepage() {
           <ArrowDownIcon className="size-10 text-white cursor-pointer hover:text-red-500 transition-colors" />
         </button>
       </div>
-      <div ref={divRef} className="mt-40 mb-0 xl:mt-50 text-red-500">
-        <span className="flex justify-center items-center text-2xl mb-10 xl:mb-0 lg:text-4xl xl:text-5xl 2xl:text-4xl md:justify-start md:p-15 font-outfit font-bold">
+      <div className="mt-40 mb-0 xl:mt-50 text-red-500 xl:h-150 lg:h-100">
+        <span className="flex justify-center items-center text-2xl mb-10 xl:mb-0 lg:mb-0 lg:text-4xl xl:text-5xl 2xl:text-4xl md:justify-start md:p-15 font-outfit font-bold">
           TEAM PREVIEW
         </span>
-        <CareerDetails />
+        <div ref={divRef}>
+          <CareerDetails />
+        </div>
       </div>
-      <div className="goat-div text-red-600 mt-40 xl:mt-50">
-        <span className="flex justify-center items-center text-center text-[20px] xl:text-5xl 2xl:text-4xl md:w-full md:ml-0 md:text-4xl md:justify-start md:items-start md:p-15 font-outfit font-bold">
+      <div className="goat-div text-red-600 mt-50 xl:mt-50">
+        <span className="flex justify-center items-center text-center text-[22px] xl:text-5xl 2xl:text-4xl md:w-full md:ml-0 md:text-4xl md:justify-start md:items-start md:p-15 font-outfit font-bold">
           THROUGH THE HISTORY
         </span>
         <CarouselHome />
@@ -139,7 +142,7 @@ function Homepage() {
         />
         <hr className="text-white" />
         <div
-          className={`flex flex-col text-center text-2xl gap-3 xl:text-2xl lg:mb-70 xl:mb-190  xl:w-96 lg:w-70 2xl:w-100 2xl:mb-250 text-red-600 max-h-85 overflow-y-auto cursor-defaul`}
+          className={`flex flex-col text-center text-2xl gap-3 xl:text-2xl lg:mb-80 xl:mb-190  xl:w-96 lg:w-70 2xl:w-100 2xl:mb-250 text-red-600 max-h-85 overflow-y-auto cursor-defaul`}
         >
           <img
             src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftiermaker.com%2Fimages%2Fmedia%2Fhero_images%2F2024%2F15978347%2Fballon-dor-tierlist-15978347%2F159783471777202724.png&f=1&nofb=1&ipt=338c1ef801f50df6da383de302dd37881b6fa0c8fdc6a181a0720dbda8bd120d&ipo=images"
@@ -271,8 +274,8 @@ function Homepage() {
           <hr className="text-white lg:self-center lg:w-60 2xl:w-full xl:w-80" />
         </div>
       </div>
-      <div className="text-red-600 flex text-center mt-40 xl:text-start xl:p-15 xl:mt-0 lg:text-start lg:p-15 lg:mt-0 font-outfit">
-        <span className="text-xl lg:text-4xl xl:text-5xl 2xl:text-4xl font-bold">
+      <div className="flex justify-center xl:justify-start lg:justify-start mt-40 lg:mt-0 xl:mt-0 lg:p-15 xl:p-15 font-outfit">
+        <span className="text-2xl lg:text-4xl xl:text-5xl 2xl:text-4xl font-bold text-red-600 text-center lg:text-start xl:text-start">
           BY THE NATION
         </span>
       </div>
@@ -322,7 +325,7 @@ function Homepage() {
         </div>
       </div>
       <div className="p-15 text-red-600 mt-20 xl:mt-40 font-outfit">
-        <span className="flex text-2xl justify-center items-center text-center w-100 xl:flex-col xl:text-left xl:justify-start xl:items-start xl:text-5xl lg:text-left lg:justify-start lg:items-start font-bold">
+        <span className="flex text-2xl justify-center items-center text-center w-100 xl:flex-col xl:text-left xl:justify-start xl:items-start xl:text-5xl lg:text-left lg:justify-start lg:items-start  lg:text-4xl font-bold">
           ROAD TO THE 1000s
         </span>
       </div>
@@ -330,7 +333,23 @@ function Homepage() {
         <The1000Goals />
       </div>
 
-      <div className="bg-red-600"></div>
+      <div className="bg-red-600 flex flex-col lg:flex-row lg:justify-center lg:items-center xl:flex-row  xl:justify-center xl:items-center 2xl:justify-center 2xl:items-center">
+        <div className=" flex flex-col font-outfit mt-3 xl:mt-0 text-lg font-bold self-center lg:self-start xl:self-start xl:p-10  lg:text-[55px] xl:text-[88px]">
+          <span className="text-white self-center">THE HISTORY</span>
+          <span className="bg-white text-red-500 p-2 self-center lg:self-start xl:self-start">
+            {" "}
+            OF A GOAT
+          </span>
+          <Link to="/biografy" className="text-white font-dm-sans text-lg">
+            Discorver more
+          </Link>
+        </div>
+        <img
+          src={cr7FrontHistory}
+          alt="cr7-history"
+          className="w-80 mt-10 self-center xl:self-auto xl:mt-0 xl:w-170 lg:w-120"
+        />
+      </div>
 
       <div className="flex justify-center items-center xl:justify-start xl:items-start lg:justify-start lg:items-start font-dm-sans h-full bg-gray-800">
         <footer className="flex flex-col xl:flex-row gap-2 xl:gap-7 p-6 w-full">

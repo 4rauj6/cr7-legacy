@@ -42,7 +42,7 @@ function CareerDetails() {
       name: "rm",
       header: "REAL MADRID FC",
       years: "2010-2018",
-      size: "w-[200px] lg:w-[200px] xl:w-[280px] md:w-[420px]",
+      size: "w-[200px] lg:w-[210px] xl:w-[280px] md:w-[420px]",
       place: "mb-[0px] ml[0px] lg:mb-[200px] md:ml-[90px]",
       text: "While CR7 became the most lethal and the best player in the world, Real Madrid was in a bad situation. But all this will change with the all new Galatic project. In 2010, Cristiano Ronaldo signed with the Real Madrid's team. The deal was a astronomical success, CR7 and Real Madrid won 16 titles in 8 years. Cristiano became the Real Madrid's top goalscore of all time, scoring 415 goals in 438 appearances. While playing in Spain, he won another 4 times the Ballon D'or award. Even today, football fans still considering thoses seasons the peak of his career",
     },
@@ -53,7 +53,7 @@ function CareerDetails() {
       header: "JUVENTUS FC",
       years: "2018-2021",
       size: "w-[190px] lg:w-[210px] xl:w-[280px] md:w-[500px]",
-      place: "mt-0 ml-[0px] xl:mb-[60px] lg:mb-[270px]",
+      place: "mt-0 ml-[0px] xl:mb-[105px] lg:mb-[100px]",
       text: "After his historic period at Real Madrid, Cristiano Ronaldo moved to Juventus in 2018 for a new challenge in Serie A. He scored 101 goals in 134 appearances across three seasons, becoming the fastest player in Juventus history to reach the 100-goal landmark. Ronaldo helped Juventus secure back-to-back Serie A titles from the 2018 to 2020 season. Those achivements being one Coppa Italia, and two Supercoppa Italiana trophies. While individual output remained elite, Juventus fell short of their ultimate target: winning the UEFA Champions League. He was also named Serie A Footballer of the Year twice and won the Capocannoniere award in the 2020-2021 season.",
     },
 
@@ -63,7 +63,7 @@ function CareerDetails() {
       header: "AL-NASSR",
       years: "2023-Currently",
       size: "w-[210px] lg:w-[220px] xl:w-[300px] md:w-[500px]",
-      place: "mt-[0px] ml-[0px] xl:mb-[100px] lg:mb-[270  px] md:ml-[50px]",
+      place: "mt-[0px] ml-[0px] xl:mb-[100px] lg:mb-[270px] md:ml-[50px]",
       text: "In January 2023, after a second stint at Manchester United, Ronaldo made a landmark move to Saudi Arabian club Al Nassr, initiating a wave of international stars moving to the Saudi Pro League. Maintaining an exceptional goal-scoring rate in his late 30s and early 40s, Ronaldo has scored over 130 goals in more than 150 appearances for Al Nassr. He won the Saudi Pro League Golden Boot in the 2023–2024 season, breaking the league's all-time single-season goalscoring record with 35 goals. Ronaldo still playing in Al-Nassr and is chasing the 1,000 goals.",
     },
   ];
@@ -77,7 +77,7 @@ function CareerDetails() {
 
   return (
     <div className="hero-2">
-      <div className="flex flex-row justify-end mr-10 md:gap-3 md:mr-25 ">
+      <div className="flex flex-row justify-end mr-10 md:gap-3 md:mr-25 lg:mb-0">
         <button onClick={prev} className="text-gray-400 hover:text-red-600">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -114,7 +114,7 @@ function CareerDetails() {
         <img
           src={team.logo}
           alt={team.name}
-          className={`${team.size} ${team.place} fade-in ml-5 `}
+          className={`${team.size} ${team.place} fade-in `}
         />
         <div className="flex flex-col self-center md:self-start text-red-600 mt-3 md:mt-20 md:ml-20 fade-in">
           <p className="self-center md:self-start text-xl lg:text-3xl md:text-4xl xl:text-5xl font-outfit font-bold">
@@ -124,7 +124,7 @@ function CareerDetails() {
             {team.years}
           </span>
           <hr className="text-white self-center w-80 md:self-start xl:w-full md:w-100" />
-          <p className="ttp font-dm-sans w-86 lg:w-120  xl:w-160 md:w-160 text-base xl:text-xl md:text-xl">
+          <p className="ttp font-dm-sans text-white w-80 lg:w-120 xl:w-160 md:w-160 text-[12px] xl:text-xl lg:text-[15px] md:text-xl">
             {team.text}
           </p>
         </div>
